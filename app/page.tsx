@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { getCategories, getToolsByCategory, getSiteStats } from "@/lib/data";
+import { getCategories, getSiteStats } from "@/lib/data";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -125,98 +125,54 @@ export default function Home() {
             </span>
           </h2>
         
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {categories.map((category, index) => {
-              const categoryTools = getToolsByCategory(category.id).slice(0, 2);
-              
-              return (
-                <div 
-                  key={category.id} 
-                  className={`bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 overflow-hidden h-[420px] flex flex-col hover:shadow-xl transition-all duration-500 hover:scale-105 ${
-                    isVisible.categories 
-                      ? 'opacity-100 translate-y-0' 
-                      : 'opacity-0 translate-y-10'
-                  }`}
-                  style={{ 
-                    animationDelay: isVisible.categories ? `${index * 100}ms` : '0ms',
-                    animation: isVisible.categories ? 'fadeInUp 0.6s ease-out forwards' : 'none'
-                  }}
-                >
-                  {/* 카테고리 헤더 */}
-                  <div className="p-6 border-b border-gray-200/50 dark:border-gray-700/50">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <div
-                        className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg"
-                        style={{ backgroundColor: category.color + "20" }}
-                      >
-                        <div
-                          className="w-6 h-6 rounded-lg"
-                          style={{ backgroundColor: category.color }}
-                        />
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                        {category.name}
-                      </h3>
-                    </div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                      {category.description}
-                    </p>
-                    <Link
-                      href={`/${category.id}`}
-                      className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center space-x-1 hover:space-x-2 transition-all duration-300"
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+            {categories.map((category, index) => (
+              <div 
+                key={category.id} 
+                className={`group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-xl transition-all duration-500 hover:scale-105 ${
+                  isVisible.categories 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-10'
+                }`}
+                style={{ 
+                  animationDelay: isVisible.categories ? `${index * 100}ms` : '0ms',
+                  animation: isVisible.categories ? 'fadeInUp 0.6s ease-out forwards' : 'none'
+                }}
+              >
+                <div className="p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <div
+                      className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg"
+                      style={{ backgroundColor: category.color + "20" }}
                     >
-                      <span>더보기</span>
-                      <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </Link>
+                      <div
+                        className="w-8 h-8 rounded-lg"
+                        style={{ backgroundColor: category.color }}
+                      />
+                    </div>
                   </div>
-
-                  {/* 도구 목록 */}
-                  <div className="p-6 space-y-4 flex-1">
-                    {categoryTools.length > 0 ? (
-                      categoryTools.map((tool) => (
-                        <div key={tool.id} className="group hover:bg-gray-50/50 dark:hover:bg-gray-700/50 rounded-lg p-3 -m-3 transition-all duration-300">
-                          <div className="flex items-start justify-between mb-2">
-                            <Link
-                              href={tool.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-medium text-gray-900 dark:text-white hover:text-blue-600 transition-colors cursor-pointer"
-                            >
-                              {tool.name}
-                            </Link>
-                            <div className="flex items-center space-x-1">
-                              {tool.pricing.free && (
-                                <span className="inline-block px-2 py-1 text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full">
-                                  무료
-                                </span>
-                              )}
-                              {tool.isPopular && (
-                                <span className="inline-block px-2 py-1 text-xs font-medium bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full">
-                                  인기
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                          <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">
-                            {tool.shortDescription}
-                          </p>
-                          <div className="text-xs text-gray-500">
-                            {tool.pricing.free 
-                              ? "무료" 
-                              : `${tool.pricing.startingPrice}/월부터`
-                            }
-                          </div>
-                        </div>
-                      ))
-                    ) : (
-                      <p className="text-sm text-gray-500 text-center py-4">
-                        곧 도구가 추가될 예정입니다
-                      </p>
-                    )}
-                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    {category.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {category.description}
+                  </p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
+          </div>
+          
+          {/* 탐색하기 버튼 */}
+          <div className="text-center">
+            <Link
+              href="/categories"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              <span>모든 AI 도구 탐색하기</span>
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
         </section>
       </div>
