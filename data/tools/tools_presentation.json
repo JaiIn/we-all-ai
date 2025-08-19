@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "description": "AI 기반 프레젠테이션 생성 도구로, 텍스트 프롬프트만으로 완전한 프레젠테이션을 자동 생성합니다. 디자인, 레이아웃, 콘텐츠를 모두 AI가 처리하며, 브랜딩과 스타일을 일관성 있게 적용합니다.",
+    "shortDescription": "AI 기반 프레젠테이션 자동 생성, 텍스트 프롬프트만으로 완성",
+    "category": "presentation",
+    "url": "https://gamma.app",
+    "pricing": {
+      "free": true,
+      "startingPrice": 8,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 프레젠테이션 생성",
+      "자동 디자인",
+      "브랜딩 적용",
+      "실시간 협업",
+      "다양한 템플릿"
+    ],
+    "tags": ["프레젠테이션", "자동생성", "디자인", "협업"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-09"
+  },
+  {
+    "id": "beautiful-ai",
+    "name": "Beautiful.AI",
+    "description": "AI 기반 스마트 디자인 프레젠테이션 도구입니다. 콘텐츠를 입력하면 AI가 자동으로 전문적인 디자인을 적용하며, 다양한 비즈니스 템플릿을 제공합니다.",
+    "shortDescription": "AI 스마트 디자인 프레젠테이션, 전문적 템플릿",
+    "category": "presentation",
+    "url": "https://www.beautiful.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": [
+      "스마트 디자인",
+      "비즈니스 템플릿",
+      "자동 레이아웃",
+      "팀 협업",
+      "브랜드 커스터마이징"
+    ],
+    "tags": ["스마트디자인", "비즈니스", "템플릿", "협업"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "tome",
+    "name": "Tome",
+    "description": "AI 기반 스토리텔링 프레젠테이션 도구로, 대화형 인터페이스를 통해 매력적인 프레젠테이션을 만듭니다. 동영상, 이미지, 3D 렌더링을 자동으로 통합합니다.",
+    "shortDescription": "AI 스토리텔링 프레젠테이션, 멀티미디어 통합",
+    "category": "presentation",
+    "url": "https://tome.app",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 스토리텔링",
+      "멀티미디어 통합",
+      "3D 렌더링",
+      "대화형 인터페이스",
+      "소셜 공유"
+    ],
+    "tags": ["스토리텔링", "멀티미디어", "3D", "대화형"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-14"
+  }
+]

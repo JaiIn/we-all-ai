@@ -1,0 +1,146 @@
+[
+  {
+    "id": "runway-ml",
+    "name": "Runway ML",
+    "description": "AI 비디오 편집 및 생성 플랫폼으로, 텍스트에서 비디오를 생성하고 실시간 비디오 효과를 적용할 수 있습니다. Green Screen AI, 객체 제거, 스타일 전송 등 다양한 AI 기반 비디오 편집 도구를 제공합니다.",
+    "shortDescription": "AI 비디오 편집 및 생성 플랫폼, 텍스트-비디오 변환 지원",
+    "category": "video",
+    "url": "https://runwayml.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": [
+      "텍스트-비디오 생성",
+      "실시간 비디오 효과",
+      "Green Screen AI",
+      "객체 제거",
+      "스타일 전송"
+    ],
+    "tags": ["비디오생성", "비디오편집", "AI효과", "창의적"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-05"
+  },
+  {
+    "id": "pika-labs",
+    "name": "Pika Labs",
+    "description": "텍스트 프롬프트에서 단편 비디오를 생성하는 AI 플랫폼입니다. 3D 애니메이션과 실사 비디오를 모두 지원하며, 커뮤니티 기반 플랫폼으로 다른 사용자들의 작품을 참고할 수 있습니다.",
+    "shortDescription": "텍스트에서 단편 비디오 생성, 3D 애니메이션 지원",
+    "category": "video",
+    "url": "https://pika.art",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "텍스트-비디오 생성",
+      "3D 애니메이션",
+      "실사 비디오",
+      "커뮤니티 플랫폼",
+      "빠른 생성 속도"
+    ],
+    "tags": ["비디오생성", "3D애니메이션", "커뮤니티", "빠른생성"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-09"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "description": "AI 아바타를 활용한 비디오 생성 플랫폼입니다. 140개 언어를 지원하며, 기업 교육과 마케팅에 특화되어 있습니다. 실제 사람처럼 보이는 AI 아바타가 스크립트를 읽어주는 비디오를 생성합니다.",
+    "shortDescription": "AI 아바타 비디오 생성, 140개 언어 지원",
+    "category": "video",
+    "url": "https://www.synthesia.io",
+    "pricing": {
+      "free": false,
+      "startingPrice": 22,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 아바타",
+      "140개 언어 지원",
+      "기업 교육 특화",
+      "커스텀 아바타",
+      "브랜드 템플릿"
+    ],
+    "tags": ["AI아바타", "다국어", "기업교육", "커스텀"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-11"
+  },
+  {
+    "id": "luma-ai",
+    "name": "Luma AI",
+    "description": "3D 캡처 및 비디오 생성 AI 플랫폼입니다. 스마트폰으로 3D 모델을 생성할 수 있으며, NeRF 기술을 활용하여 고품질 3D 콘텐츠를 만들 수 있습니다.",
+    "shortDescription": "3D 캡처 및 비디오 생성, 스마트폰 3D 모델링",
+    "category": "video",
+    "url": "https://lumalabs.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 9.99,
+      "currency": "USD"
+    },
+    "features": [
+      "스마트폰 3D 스캔",
+      "NeRF 기술",
+      "고품질 3D 모델",
+      "비디오 생성",
+      "AR/VR 호환"
+    ],
+    "tags": ["3D스캔", "NeRF", "스마트폰", "AR/VR"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-13"
+  },
+  {
+    "id": "stable-video-diffusion",
+    "name": "Stable Video Diffusion",
+    "description": "Stability AI에서 개발한 오픈소스 비디오 생성 모델입니다. 이미지에서 비디오로 변환하는 기능과 카메라 모션 제어를 제공하며, 오픈소스로 무료 접근이 가능합니다.",
+    "shortDescription": "오픈소스 비디오 생성, 이미지-비디오 변환",
+    "category": "video",
+    "url": "https://stability.ai/stable-video",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "오픈소스",
+      "이미지-비디오 변환",
+      "카메라 모션 제어",
+      "커뮤니티 지원",
+      "로컬 실행 가능"
+    ],
+    "tags": ["오픈소스", "이미지투비디오", "모션제어", "로컬실행"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-15"
+  },
+  {
+    "id": "invideo-ai",
+    "name": "InVideo AI",
+    "description": "AI 기반 비디오 제작 플랫폼으로, 텍스트 스크립트를 전문적인 비디오로 자동 변환합니다. 소셜 미디어, 마케팅, 교육 콘텐츠 제작에 특화되어 있습니다.",
+    "shortDescription": "AI 비디오 제작, 텍스트를 전문 비디오로 변환",
+    "category": "video",
+    "url": "https://invideo.io",
+    "pricing": {
+      "free": true,
+      "startingPrice": 15,
+      "currency": "USD"
+    },
+    "features": [
+      "텍스트-비디오 변환",
+      "소셜 미디어 최적화",
+      "마케팅 템플릿",
+      "자동 자막 생성",
+      "브랜드 키트"
+    ],
+    "tags": ["소셜미디어", "마케팅", "자막생성", "브랜드키트"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-12"
+  }
+]

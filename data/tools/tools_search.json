@@ -1,0 +1,74 @@
+[
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "description": "AI 기반 검색 엔진으로, 실시간 웹 정보를 바탕으로 정확하고 최신의 답변을 제공합니다. 출처를 명시한 답변과 후속 질문 제안을 통해 심층적인 리서치를 도와줍니다. 학술 연구, 시장 조사, 일반적인 정보 검색에 특화되어 있습니다.",
+    "shortDescription": "AI 기반 검색 엔진, 실시간 웹 정보로 정확한 답변 제공",
+    "category": "search",
+    "url": "https://www.perplexity.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "실시간 웹 검색",
+      "출처 명시 답변",
+      "후속 질문 제안",
+      "학술 검색",
+      "다국어 지원"
+    ],
+    "tags": ["검색엔진", "리서치", "실시간정보", "출처제공"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-14"
+  },
+  {
+    "id": "you-com",
+    "name": "You.com",
+    "description": "AI 기반 검색 엔진으로, 개인화된 검색 결과와 AI 어시스턴트 기능을 결합했습니다. 다양한 AI 모드를 제공하여 용도에 맞는 검색과 답변을 제공합니다.",
+    "shortDescription": "개인화된 AI 검색 엔진, 다양한 AI 모드 제공",
+    "category": "search",
+    "url": "https://you.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 15,
+      "currency": "USD"
+    },
+    "features": [
+      "개인화된 검색",
+      "다양한 AI 모드",
+      "실시간 정보",
+      "코딩 지원",
+      "이미지 생성"
+    ],
+    "tags": ["개인화검색", "AI모드", "코딩지원", "통합서비스"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-13"
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "description": "과학 논문과 연구 자료에 특화된 AI 검색 엔진입니다. 수백만 개의 논문을 분석하여 과학적 합의점을 찾아주며, 연구자와 학자들의 리서치를 지원합니다.",
+    "shortDescription": "과학 논문 특화 AI 검색, 연구 자료 분석",
+    "category": "search",
+    "url": "https://consensus.app",
+    "pricing": {
+      "free": true,
+      "startingPrice": 9,
+      "currency": "USD"
+    },
+    "features": [
+      "과학 논문 검색",
+      "연구 자료 분석",
+      "합의점 도출",
+      "인용 추적",
+      "메타 분석"
+    ],
+    "tags": ["과학논문", "연구", "학술", "메타분석"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-11"
+  }
+]

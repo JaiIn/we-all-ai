@@ -1,0 +1,146 @@
+[
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "description": "예술적 품질의 이미지 생성에 특화된 AI 도구로, 텍스트 프롬프트를 통해 고품질의 아트워크를 생성할 수 있습니다. Discord를 통한 독특한 사용자 인터페이스를 제공하며, 커뮤니티 갤러리를 통해 다른 사용자들의 작품을 참고할 수 있습니다.",
+    "shortDescription": "예술적 품질의 이미지 생성 AI, Discord 기반 인터페이스",
+    "category": "image",
+    "url": "https://www.midjourney.com",
+    "pricing": {
+      "free": false,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "고품질 아트워크 생성",
+      "다양한 스타일 지원",
+      "커뮤니티 갤러리",
+      "세밀한 프롬프트 제어",
+      "Discord 통합"
+    ],
+    "tags": ["이미지생성", "아트", "창의적", "Discord"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-08"
+  },
+  {
+    "id": "dalle3",
+    "name": "DALL-E 3",
+    "description": "OpenAI에서 개발한 최신 이미지 생성 AI로, 텍스트 설명을 정확하게 이해하여 고품질 이미지를 생성합니다. ChatGPT Plus에 통합되어 있어 자연어로 쉽게 이미지를 만들 수 있습니다.",
+    "shortDescription": "OpenAI의 최신 이미지 생성 AI, ChatGPT Plus 통합",
+    "category": "image",
+    "url": "https://openai.com/dall-e-3",
+    "pricing": {
+      "free": false,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "정확한 텍스트 이해",
+      "고품질 이미지 생성",
+      "ChatGPT 통합",
+      "안전성 필터",
+      "상업적 사용 가능"
+    ],
+    "tags": ["이미지생성", "OpenAI", "ChatGPT", "고품질"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-16"
+  },
+  {
+    "id": "stable-diffusion",
+    "name": "Stable Diffusion",
+    "description": "오픈소스 텍스트-이미지 생성 모델로, 로컬에서 실행 가능하며 높은 커스터마이징 자유도를 제공합니다. 다양한 파인튜닝 모델 커뮤니티가 활성화되어 있어 특화된 스타일의 이미지 생성이 가능합니다.",
+    "shortDescription": "오픈소스 이미지 생성 모델, 로컬 실행 및 커스터마이징 가능",
+    "category": "image",
+    "url": "https://stability.ai/stable-diffusion",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "오픈소스",
+      "로컬 실행 가능",
+      "높은 커스터마이징",
+      "다양한 파인튜닝 모델",
+      "활성화된 커뮤니티"
+    ],
+    "tags": ["오픈소스", "이미지생성", "로컬실행", "커스터마이징"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-04"
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo AI",
+    "description": "게임 에셋과 아트워크 생성에 특화된 AI 도구입니다. 실시간 이미지 생성 기능과 3D 텍스처 생성을 지원하며, 게임 개발자와 디지털 아티스트를 위한 다양한 템플릿을 제공합니다.",
+    "shortDescription": "게임 에셋 및 아트워크 생성 특화, 실시간 생성 지원",
+    "category": "image",
+    "url": "https://leonardo.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "게임 에셋 생성",
+      "실시간 이미지 생성",
+      "3D 텍스처 생성",
+      "게임 아트 템플릿",
+      "고품질 렌더링"
+    ],
+    "tags": ["게임에셋", "실시간생성", "3D텍스처", "아트워크"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "description": "Adobe 크리에이티브 제품군에 통합된 생성 AI입니다. 상업적 사용이 안전한 학습 데이터를 사용하며, Photoshop, Illustrator 등과 완벽하게 연동됩니다.",
+    "shortDescription": "Adobe 통합 생성 AI, 상업적 안전성 보장",
+    "category": "image",
+    "url": "https://firefly.adobe.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 4.99,
+      "currency": "USD"
+    },
+    "features": [
+      "Adobe 제품 통합",
+      "상업적 안전성",
+      "벡터 그래픽 생성",
+      "텍스트 효과",
+      "이미지 확장"
+    ],
+    "tags": ["Adobe", "상업적안전", "벡터", "텍스트효과"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-14"
+  },
+  {
+    "id": "canva-ai",
+    "name": "Canva AI",
+    "description": "Canva에 통합된 AI 기능으로, 마술처럼 배경을 제거하고, 이미지를 생성하며, 디자인을 자동으로 완성합니다. 비디자이너도 쉽게 전문적인 디자인을 만들 수 있습니다.",
+    "shortDescription": "Canva 통합 AI, 자동 디자인 완성 및 배경 제거",
+    "category": "image",
+    "url": "https://www.canva.com/ai-image-generator/",
+    "pricing": {
+      "free": true,
+      "startingPrice": 14.99,
+      "currency": "USD"
+    },
+    "features": [
+      "배경 자동 제거",
+      "AI 이미지 생성",
+      "자동 디자인 완성",
+      "템플릿 라이브러리",
+      "팀 협업"
+    ],
+    "tags": ["디자인", "배경제거", "템플릿", "협업"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-11"
+  }
+]

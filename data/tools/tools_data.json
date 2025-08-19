@@ -1,0 +1,74 @@
+[
+  {
+    "id": "claude-analysis",
+    "name": "Claude (Analysis)",
+    "description": "Claude의 분석 기능을 활용한 데이터 분석 도구입니다. 대용량 CSV, Excel 파일을 처리하고, 복잡한 데이터 분석 및 시각화를 수행할 수 있습니다.",
+    "shortDescription": "Claude 기반 데이터 분석, 대용량 파일 처리 및 시각화",
+    "category": "data",
+    "url": "https://claude.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "대용량 파일 처리",
+      "데이터 시각화",
+      "통계 분석",
+      "Python 코드 실행",
+      "차트 생성"
+    ],
+    "tags": ["데이터분석", "시각화", "통계", "Python"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-17"
+  },
+  {
+    "id": "chatgpt-code-interpreter",
+    "name": "ChatGPT Code Interpreter",
+    "description": "ChatGPT의 코드 인터프리터 기능으로, 데이터 분석, 시각화, 머신러닝 모델 생성을 수행할 수 있습니다. Python 환경에서 실시간으로 코드를 실행하고 결과를 확인할 수 있습니다.",
+    "shortDescription": "ChatGPT 기반 코드 실행 및 데이터 분석",
+    "category": "data",
+    "url": "https://chat.openai.com",
+    "pricing": {
+      "free": false,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "Python 코드 실행",
+      "데이터 분석",
+      "머신러닝 모델",
+      "실시간 시각화",
+      "파일 업로드"
+    ],
+    "tags": ["코드실행", "머신러닝", "Python", "실시간"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-15"
+  },
+  {
+    "id": "julius-ai",
+    "name": "Julius AI",
+    "description": "데이터 분석에 특화된 AI 어시스턴트로, 자연어로 질문하면 복잡한 데이터 분석을 수행합니다. 비즈니스 인텔리전스와 예측 분석에 강점을 가지고 있습니다.",
+    "shortDescription": "자연어 기반 데이터 분석 AI, 비즈니스 인텔리전스 특화",
+    "category": "data",
+    "url": "https://julius.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "자연어 쿼리",
+      "비즈니스 인텔리전스",
+      "예측 분석",
+      "자동 시각화",
+      "리포트 생성"
+    ],
+    "tags": ["자연어쿼리", "BI", "예측분석", "리포트"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-12"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "description": "최첨단 AI 음성 합성 기술을 제공하는 플랫폼으로, 자연스러운 음성 생성과 음성 복제 기능을 제공합니다. 29개 언어를 지원하며, 실시간 음성 변환과 감정 표현이 가능한 고품질 AI 보이스를 생성할 수 있습니다.",
+    "shortDescription": "고품질 AI 음성 합성 및 음성 복제 기술, 29개 언어 지원",
+    "category": "voice",
+    "url": "https://elevenlabs.io",
+    "pricing": {
+      "free": true,
+      "startingPrice": 5,
+      "currency": "USD"
+    },
+    "features": [
+      "자연스러운 음성 합성",
+      "음성 복제 기능",
+      "29개 언어 지원",
+      "실시간 음성 변환",
+      "감정 표현 조절"
+    ],
+    "tags": ["음성합성", "TTS", "음성복제", "다국어"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "murf",
+    "name": "Murf",
+    "description": "AI 기반 보이스오버 생성 플랫폼으로, 120개 이상의 자연스러운 AI 보이스를 제공합니다. 20개 언어를 지원하며, 비디오와 음성을 자동으로 동기화하는 기능을 제공합니다.",
+    "shortDescription": "AI 보이스오버 생성, 120개 이상 보이스 제공",
+    "category": "voice",
+    "url": "https://murf.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 19,
+      "currency": "USD"
+    },
+    "features": [
+      "120개 이상 AI 보이스",
+      "20개 언어 지원",
+      "비디오-음성 동기화",
+      "감정 조절",
+      "배경음악 추가"
+    ],
+    "tags": ["보이스오버", "다국어", "비디오동기화", "감정조절"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-10"
+  },
+  {
+    "id": "speechify",
+    "name": "Speechify",
+    "description": "텍스트를 자연스러운 음성으로 변환하는 AI 서비스입니다. 독서 속도 향상에 특화되어 있으며, 모바일 앱과 브라우저 확장을 통해 어디서나 텍스트를 음성으로 들을 수 있습니다.",
+    "shortDescription": "텍스트 음성 변환, 독서 속도 향상 특화",
+    "category": "voice",
+    "url": "https://speechify.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 11.58,
+      "currency": "USD"
+    },
+    "features": [
+      "자연스러운 TTS",
+      "독서 속도 향상",
+      "모바일 앱",
+      "브라우저 확장",
+      "OCR 지원"
+    ],
+    "tags": ["TTS", "독서", "모바일", "OCR"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-08"
+  },
+  {
+    "id": "replica-studios",
+    "name": "Replica Studios",
+    "description": "게임, 영화, VR 콘텐츠용 AI 보이스 생성 플랫폼입니다. 감정과 톤을 세밀하게 조절할 수 있으며, 실시간 보이스 생성으로 인터랙티브 콘텐츠 제작을 지원합니다.",
+    "shortDescription": "게임 및 미디어용 AI 보이스, 감정 톤 조절 가능",
+    "category": "voice",
+    "url": "https://replicastudios.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 4,
+      "currency": "USD"
+    },
+    "features": [
+      "게임 특화 보이스",
+      "감정 톤 조절",
+      "실시간 생성",
+      "VR/AR 지원",
+      "캐릭터 보이스"
+    ],
+    "tags": ["게임", "VR", "캐릭터보이스", "실시간"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-06"
+  },
+  {
+    "id": "resemble-ai",
+    "name": "Resemble AI",
+    "description": "실시간 음성 복제 및 변환을 위한 AI 플랫폼입니다. 단 몇 분의 음성 샘플만으로 개인의 목소리를 복제할 수 있으며, 다국어 음성 변환과 실시간 보이스 체인저 기능을 제공합니다.",
+    "shortDescription": "실시간 음성 복제 및 변환, 몇 분만에 목소리 복제",
+    "category": "voice",
+    "url": "https://www.resemble.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0.006,
+      "currency": "USD"
+    },
+    "features": [
+      "실시간 음성 복제",
+      "다국어 음성 변환",
+      "실시간 보이스 체인저",
+      "API 통합",
+      "감정 표현 제어"
+    ],
+    "tags": ["음성복제", "실시간변환", "API", "다국어"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-05"
+  },
+  {
+    "id": "wellsaid-labs",
+    "name": "WellSaid Labs",
+    "description": "기업용 AI 음성 생성 플랫폼으로, 브랜드에 맞는 일관된 음성을 제공합니다. 기업 교육, 마케팅 콘텐츠, 고객 서비스용 보이스오버를 전문적인 품질로 생성합니다.",
+    "shortDescription": "기업용 AI 음성 생성, 브랜드 맞춤 보이스",
+    "category": "voice",
+    "url": "https://wellsaidlabs.com",
+    "pricing": {
+      "free": false,
+      "startingPrice": 44,
+      "currency": "USD"
+    },
+    "features": [
+      "기업용 음성 솔루션",
+      "브랜드 맞춤 보이스",
+      "고품질 오디오",
+      "팀 협업 기능",
+      "대용량 처리"
+    ],
+    "tags": ["기업용", "브랜드보이스", "협업", "고품질"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-07"
+  }
+]

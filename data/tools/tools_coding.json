@@ -1,0 +1,146 @@
+[
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "description": "GitHub Copilot은 OpenAI와 Microsoft가 공동 개발한 AI 코드 어시스턴트로, 자연어 주석을 실제 코드로 변환하고 실시간으로 코드 제안을 제공합니다. VS Code, IntelliJ 등 주요 IDE에서 사용할 수 있으며, 컨텍스트를 이해하여 정확한 코드 완성을 도와줍니다.",
+    "shortDescription": "AI 코드 어시스턴트로 실시간 코드 제안 및 자연어 주석을 코드로 변환",
+    "category": "coding",
+    "url": "https://github.com/features/copilot",
+    "pricing": {
+      "free": false,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "실시간 코드 완성",
+      "자연어 주석을 코드로 변환",
+      "다양한 프로그래밍 언어 지원",
+      "IDE 통합",
+      "컨텍스트 인식 제안"
+    ],
+    "tags": ["코드생성", "AI어시스턴트", "개발도구", "Microsoft"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-15"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "description": "AI 기반 코드 에디터로 VS Code의 포크 버전입니다. 코드베이스 전체를 이해하고 컨텍스트 기반 제안을 제공하며, AI와의 채팅을 통해 코드 설명 및 수정 요청이 가능합니다.",
+    "shortDescription": "AI 기반 코드 에디터, VS Code 포크 버전",
+    "category": "coding",
+    "url": "https://cursor.sh",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "코드베이스 전체 이해",
+      "컨텍스트 기반 제안",
+      "AI 채팅 기능",
+      "멀티파일 편집",
+      "VS Code 호환"
+    ],
+    "tags": ["코드에디터", "AI어시스턴트", "VSCode", "개발환경"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-16"
+  },
+  {
+    "id": "windsurf",
+    "name": "Windsurf",
+    "description": "세계 최초의 AI 네이티브 IDE로, 개발자가 플로우 상태를 유지할 수 있도록 설계되었습니다. Cascade AI 기능을 통해 자동으로 린트 오류를 감지하고 수정하며, 터미널 명령어 자동 실행까지 지원합니다.",
+    "shortDescription": "AI 네이티브 IDE, 플로우 상태 유지에 최적화",
+    "category": "coding",
+    "url": "https://windsurf.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 네이티브 IDE",
+      "Cascade AI 기능",
+      "자동 린트 오류 수정",
+      "터미널 통합",
+      "실시간 협업"
+    ],
+    "tags": ["IDE", "AI네이티브", "개발환경", "자동화"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-18"
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "description": "개인정보 보호에 중점을 둔 AI 코드 완성 도구입니다. 로컬 모델과 클라우드 모델 옵션을 제공하며, 팀 학습 기능으로 조직의 코딩 스타일에 적응합니다.",
+    "shortDescription": "개인정보 보호 중심의 AI 코드 완성 도구",
+    "category": "coding",
+    "url": "https://www.tabnine.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": [
+      "로컬 및 클라우드 모델",
+      "팀 학습 기능",
+      "25개 이상 프로그래밍 언어",
+      "개인정보 보호",
+      "IDE 통합"
+    ],
+    "tags": ["코드완성", "프라이버시", "팀학습", "다국어지원"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-14"
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium",
+    "description": "GitHub Copilot의 무료 대안으로 설계된 AI 코드 완성 도구입니다. 지능적인 코드 제안을 제공하며 지속적으로 기능을 개선하고 있습니다.",
+    "shortDescription": "GitHub Copilot의 무료 대안, 지능적 코드 제안",
+    "category": "coding",
+    "url": "https://codeium.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": [
+      "무료 개인 사용",
+      "70개 이상 프로그래밍 언어",
+      "실시간 코드 제안",
+      "채팅 기능",
+      "IDE 플러그인"
+    ],
+    "tags": ["무료", "코드완성", "다국어", "채팅"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "aider",
+    "name": "Aider",
+    "description": "터미널에서 작동하는 오픈소스 AI 페어 프로그래밍 도구입니다. Git 저장소와 직접 작업하며, AI 지원과 버전 관리를 강력하게 결합합니다.",
+    "shortDescription": "터미널 기반 AI 페어 프로그래밍 도구, Git 통합",
+    "category": "coding",
+    "url": "https://aider.chat",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "오픈소스",
+      "터미널 인터페이스",
+      "Git 통합",
+      "자동 커밋 메시지",
+      "100개 이상 언어 지원"
+    ],
+    "tags": ["오픈소스", "터미널", "Git", "페어프로그래밍"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-10"
+  }
+]

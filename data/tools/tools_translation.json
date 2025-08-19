@@ -1,0 +1,74 @@
+[
+  {
+    "id": "deepl",
+    "name": "DeepL",
+    "description": "AI 기반 번역 서비스로, 자연스럽고 정확한 번역을 제공합니다. 31개 언어를 지원하며, 문맥을 이해한 번역과 문서 번역 기능을 제공합니다. 특히 유럽 언어에서 뛰어난 성능을 보이며, 전문 용어와 관용구도 정확하게 번역합니다.",
+    "shortDescription": "AI 기반 고품질 번역 서비스, 31개 언어 지원",
+    "category": "translation",
+    "url": "https://www.deepl.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 5.99,
+      "currency": "USD"
+    },
+    "features": [
+      "고품질 AI 번역",
+      "31개 언어 지원",
+      "문서 번역",
+      "용어집 기능",
+      "API 제공"
+    ],
+    "tags": ["번역", "다국어", "문서번역", "API"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-11"
+  },
+  {
+    "id": "google-translate",
+    "name": "Google Translate",
+    "description": "구글의 AI 기반 번역 서비스로, 100개 이상의 언어를 지원합니다. 텍스트, 음성, 이미지, 실시간 카메라 번역 등 다양한 형태의 번역을 제공하며, 무료로 이용할 수 있습니다.",
+    "shortDescription": "구글 AI 번역, 100개 이상 언어 지원",
+    "category": "translation",
+    "url": "https://translate.google.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "100개 이상 언어",
+      "음성 번역",
+      "이미지 번역",
+      "실시간 카메라 번역",
+      "오프라인 번역"
+    ],
+    "tags": ["무료번역", "음성번역", "이미지번역", "실시간"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-16"
+  },
+  {
+    "id": "quillbot",
+    "name": "QuillBot",
+    "description": "AI 기반 패러프레이징 및 문장 개선 도구입니다. 텍스트를 다양한 스타일로 재작성하고, 문법 검사, 표절 검사 등의 기능을 제공합니다. 학술 논문 작성과 영어 학습에 유용합니다.",
+    "shortDescription": "AI 패러프레이징 및 문장 개선, 학술 작성 지원",
+    "category": "translation",
+    "url": "https://quillbot.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 9.95,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 패러프레이징",
+      "문법 검사",
+      "표절 검사",
+      "인용 생성",
+      "요약 기능"
+    ],
+    "tags": ["패러프레이징", "문법검사", "학술작성", "요약"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-09"
+  }
+]

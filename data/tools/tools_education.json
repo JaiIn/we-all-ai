@@ -1,0 +1,74 @@
+[
+  {
+    "id": "khan-academy-ai",
+    "name": "Khan Academy AI",
+    "description": "개인화된 학습을 위한 AI 튜터 시스템으로, 학생의 학습 진도와 이해도를 분석하여 맞춤형 학습 경로를 제공합니다. 수학, 과학, 역사 등 다양한 과목에서 AI 기반 개인 지도를 받을 수 있습니다.",
+    "shortDescription": "개인화된 AI 튜터 시스템, 맞춤형 학습 경로 제공",
+    "category": "education",
+    "url": "https://www.khanacademy.org/ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "개인화된 학습",
+      "AI 튜터",
+      "학습 진도 분석",
+      "다양한 과목",
+      "무료 이용"
+    ],
+    "tags": ["교육", "AI튜터", "개인화학습", "무료"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-13"
+  },
+  {
+    "id": "duolingo",
+    "name": "Duolingo",
+    "description": "AI 기반 언어 학습 플랫폼으로, 개인의 학습 패턴을 분석하여 최적화된 언어 학습 경험을 제공합니다. 게임화된 인터페이스와 AI 대화 파트너를 통해 실용적인 언어 능력을 향상시킵니다.",
+    "shortDescription": "AI 기반 언어 학습, 개인화된 학습 경험",
+    "category": "education",
+    "url": "https://www.duolingo.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 6.99,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 언어 학습",
+      "개인화된 커리큘럼",
+      "게임화된 학습",
+      "AI 대화 파트너",
+      "40개 이상 언어"
+    ],
+    "tags": ["언어학습", "게임화", "개인화", "대화연습"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-16"
+  },
+  {
+    "id": "socratic",
+    "name": "Socratic by Google",
+    "description": "Google에서 개발한 AI 기반 학습 도우미로, 카메라로 문제를 촬영하면 단계별 해결 과정을 제공합니다. 수학, 과학, 역사, 영어 등 다양한 과목을 지원하며, 고등학생들의 숙제 해결을 돕습니다.",
+    "shortDescription": "Google AI 학습 도우미, 카메라로 문제 해결",
+    "category": "education",
+    "url": "https://socratic.org",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "카메라 문제 인식",
+      "단계별 해결 과정",
+      "다과목 지원",
+      "시각적 설명",
+      "무료 이용"
+    ],
+    "tags": ["숙제도움", "카메라인식", "단계별해설", "Google"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-12"
+  }
+]
