@@ -164,7 +164,6 @@ export default function AnimatedBackground({ children }: AnimatedBackgroundProps
               const seed1 = (i * 9301 + 49297) % 233280;
               const seed2 = (i * 9343 + 49999) % 233280;
               const seed3 = (i * 9377 + 48271) % 233280;
-              const seed4 = (i * 9391 + 47777) % 233280;
               
               const left = (seed1 / 233280) * 100;
               const delay = (seed2 / 233280) * 20;

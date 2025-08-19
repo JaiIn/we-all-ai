@@ -43,16 +43,22 @@ export default function Header() {
     };
   }, [lastScrollY]);
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
+  const performSearch = () => {
     if (searchQuery.trim()) {
       router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
     }
   };
 
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    performSearch();
+  };
+
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
-      handleSearch(e as any);
+      // 폼 제출을 방지하기 위해 preventDefault 추가
+      e.preventDefault();
+      performSearch();
     }
   };
 

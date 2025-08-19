@@ -10,7 +10,7 @@ import SearchSection from "@/components/search/SearchSection";
 export default function Home() {
   const categories = getCategories();
   const stats = getSiteStats();
-  const [currentSection, setCurrentSection] = useState(0);
+  const [, setCurrentSection] = useState(0);
   const [isVisible, setIsVisible] = useState({ hero: true, stats: false, categories: false });
 
   useEffect(() => {

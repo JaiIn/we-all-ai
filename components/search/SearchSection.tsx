@@ -15,10 +15,6 @@ export default function SearchSection() {
     }
   };
 
-  const handleQuickSearch = (term: string) => {
-    router.push(`/search?q=${encodeURIComponent(term)}`);
-  };
-
   return (
     <div className="text-center mb-16">
       {/* 검색창 */}

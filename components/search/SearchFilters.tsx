@@ -1,4 +1,4 @@
-import { SearchFilters } from '@/hooks/useSearch';
+import type { SearchFilters } from '@/hooks/useSearch';
 import { CategoryInfo } from '@/types';
 
 interface SearchFiltersProps {

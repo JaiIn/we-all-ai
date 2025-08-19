@@ -3,18 +3,9 @@ import ToolCard from '@/components/category/ToolCard';
 
 interface SearchResultsProps {
   tools: AiTool[];
-  query: string;
 }
 
-export default function SearchResults({ tools, query }: SearchResultsProps) {
-  // 검색어 하이라이트 함수
-  const highlightText = (text: string, searchQuery: string): string => {
-    if (!searchQuery.trim()) return text;
-    
-    const regex = new RegExp(`(${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-    return text.replace(regex, '<mark class="bg-yellow-200 dark:bg-yellow-700 px-1 rounded">$1</mark>');
-  };
-
+export default function SearchResults({ tools }: SearchResultsProps) {
   return (
     <div>
       {/* 정렬 옵션 */}

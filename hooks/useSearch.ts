@@ -15,10 +15,16 @@ export interface SearchResult {
   hasMore: boolean;
 }
 
-export function useSearch() {
-  const [query, setQuery] = useState('');
+export interface UseSearchProps {
+  initialQuery?: string;
+  initialFilters?: Partial<SearchFilters>;
+}
+
+export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchProps = {}) {
+  const [query, setQuery] = useState(initialQuery);
   const [filters, setFilters] = useState<SearchFilters>({
-    pricing: 'all'
+    pricing: 'all',
+    ...initialFilters,
   });
   const [isSearching, setIsSearching] = useState(false);
 
