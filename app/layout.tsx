@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description: "Discover and explore AI tools across 12 categories including coding, writing, image generation, voice synthesis, and more. Your comprehensive AI tools directory.",
   keywords: "AI tools, artificial intelligence, coding AI, writing AI, image generation, voice synthesis, video creation, music generation",
   authors: [{ name: "We All AI" }],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "We All AI - AI Tools Directory",
     description: "Comprehensive directory of AI tools across all categories",
