@@ -66,7 +66,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://github.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://github.com/JaiIn/we-all-ai" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   GitHub
                 </a>
               </li>
@@ -77,7 +77,7 @@ export default function Footer() {
         {/* 하단 정보 */}
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-center text-gray-500 dark:text-gray-400 text-sm">
-            © 2024 We All AI. All rights reserved. | AI 도구 정보는 각 서비스 제공업체에서 제공됩니다.
+            © 2025 We All AI. All rights reserved. | AI 도구 정보는 각 서비스 제공업체에서 제공됩니다.
           </p>
         </div>
       </div>
