@@ -5,6 +5,7 @@ import { getCategories, getSiteStats } from "@/lib/data";
 import { useEffect, useState } from "react";
 import CategoryIcon from "@/components/common/CategoryIcon";
 import AnimatedBackground from "@/components/common/AnimatedBackground";
+import SearchSection from "@/components/search/SearchSection";
 
 export default function Home() {
   const categories = getCategories();
@@ -55,6 +56,9 @@ export default function Home() {
               코딩부터 창작까지, 당신이 필요한 AI 도구가 여기 있습니다.
             </p>
 
+            {/* 검색 섹션 */}
+            <SearchSection />
+
             {/* 스크롤 힌트 */}
             <div className="animate-bounce">
               <svg className="w-6 h-6 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,13 +74,13 @@ export default function Home() {
         }`}>
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-16">
-              전 세계가 신뢰하는 
+              원하는걸 얻을 수 있는
               <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-                AI 도구 플랫폼
+                 AI 도구 플랫폼
               </span>
             </h2>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
                 <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
                   <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">{stats.totalTools}+</div>
@@ -95,12 +99,12 @@ export default function Home() {
                   <div className="text-gray-600 dark:text-gray-400 text-lg">무료 도구</div>
                 </div>
               </div>
-              <div className="text-center transform hover:scale-105 transition-transform duration-300">
+              {/* <div className="text-center transform hover:scale-105 transition-transform duration-300">
                 <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
                   <div className="text-4xl md:text-5xl font-bold text-orange-600 mb-2">{stats.totalReviews.toLocaleString()}</div>
                   <div className="text-gray-600 dark:text-gray-400 text-lg">리뷰</div>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             {/* 스크롤 힌트 */}

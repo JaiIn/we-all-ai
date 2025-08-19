@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function Header() {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +28,6 @@ export default function Header() {
     };
 
     const handleMouseMove = (e: MouseEvent) => {
-      setMouseY(e.clientY);
-      
       // 마우스가 상단 50px 이내에 있으면 헤더 표시
       if (e.clientY < 50) {
         setIsVisible(true);
@@ -42,6 +42,19 @@ export default function Header() {
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, [lastScrollY]);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleSearch(e as any);
+    }
+  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm border-b border-gray-200/50 dark:border-gray-700/50 transition-transform duration-300 ${
@@ -61,16 +74,22 @@ export default function Header() {
 
           {/* 검색창 - 데스크톱 */}
           <div className="hidden md:flex flex-1 max-w-2xl mx-8">
-            <div className="relative w-full">
+            <form onSubmit={handleSearch} className="relative w-full">
               <input
                 type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyPress={handleKeyPress}
                 placeholder="AI 도구를 검색해보세요..."
                 className="w-full px-8 py-4 text-base border border-gray-200 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-700/50 dark:text-white backdrop-blur-sm"
               />
-              <button className="absolute right-2 top-1.5 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
+              <button 
+                type="submit"
+                className="absolute right-2 top-1.5 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+              >
                 검색
               </button>
-            </div>
+            </form>
           </div>
 
           {/* 네비게이션 - 데스크톱 */}
@@ -88,10 +107,10 @@ export default function Header() {
               카테고리
             </Link>
             <Link 
-              href="/about" 
+              href="/search" 
               className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
             >
-              소개
+              검색
             </Link>
           </nav>
 
@@ -115,16 +134,21 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-gray-200/50 dark:border-gray-700/50">
             {/* 모바일 검색창 */}
             <div className="mb-4">
-              <div className="relative">
+              <form onSubmit={handleSearch} className="relative">
                 <input
                   type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="AI 도구를 검색해보세요..."
                   className="w-full px-4 py-3 text-sm border border-gray-200 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-700/50 dark:text-white"
                 />
-                <button className="absolute right-2 top-1 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs rounded-full">
+                <button 
+                  type="submit"
+                  className="absolute right-2 top-1 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs rounded-full"
+                >
                   검색
                 </button>
-              </div>
+              </form>
             </div>
             
             {/* 모바일 네비게이션 */}
@@ -144,11 +168,11 @@ export default function Header() {
                 카테고리
               </Link>
               <Link 
-                href="/about" 
+                href="/search" 
                 className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                소개
+                검색
               </Link>
             </div>
           </div>
