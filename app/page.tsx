@@ -15,11 +15,11 @@ export default function Home() {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       
-      // 섹션별 스크롤 위치 계산
-      if (scrollY < windowHeight * 0.8) {
+      // 섹션별 스크롤 위치 계산 - 더 빨리 트리거되도록 조정
+      if (scrollY < windowHeight * 0.3) {
         setCurrentSection(0);
         setIsVisible({ hero: true, stats: false, categories: false });
-      } else if (scrollY < windowHeight * 1.6) {
+      } else if (scrollY < windowHeight * 0.9) {
         setCurrentSection(1);
         setIsVisible({ hero: true, stats: true, categories: false });
       } else {
@@ -51,25 +51,11 @@ export default function Home() {
               </span>{" "}
               <br />for Your Needs
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
               다양한 분야의 AI 도구들을 한 곳에서 쉽게 찾고 비교해보세요.
               <br className="hidden md:block" /> 
               코딩부터 창작까지, 당신이 필요한 AI 도구가 여기 있습니다.
             </p>
-            
-            {/* 검색바 */}
-            <div className="max-w-3xl mx-auto mb-16">
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="AI 도구를 검색해보세요..."
-                  className="w-full px-8 py-5 text-lg border-2 border-gray-200 dark:border-gray-600 rounded-full focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-lg"
-                />
-                <button className="absolute right-3 top-3 px-8 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg">
-                  검색
-                </button>
-              </div>
-            </div>
 
             {/* 스크롤 힌트 */}
             <div className="animate-bounce">
