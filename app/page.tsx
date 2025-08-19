@@ -66,10 +66,10 @@ export default function Home() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {categories.map((category) => {
-            const categoryTools = getToolsByCategory(category.id).slice(0, 3);
+            const categoryTools = getToolsByCategory(category.id).slice(0, 2);
             
             return (
-              <div key={category.id} className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden h-[400px] flex flex-col">
+              <div key={category.id} className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden h-[420px] flex flex-col">
                 {/* 카테고리 헤더 */}
                 <div className="p-6 border-b border-gray-200 dark:border-gray-700">
                   <div className="flex items-center space-x-3 mb-2">
@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
 
                 {/* 도구 목록 */}
-                <div className="p-6 space-y-5 flex-1">
+                <div className="p-6 space-y-4 flex-1">
                   {categoryTools.length > 0 ? (
                     categoryTools.map((tool) => (
                       <div key={tool.id} className="group">
