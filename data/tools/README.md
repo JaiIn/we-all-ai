@@ -5,16 +5,16 @@
 ## 파일 구조
 - `tools_coding.json` - 코딩 & 개발 도구
 - `tools_writing.json` - 글쓰기 & 문서 도구
-- `tools_image.json` - 이미지 & 디자인 도구 (예정)
-- `tools_voice.json` - 음성 & 오디오 도구 (예정)
-- `tools_video.json` - 영상 & 애니메이션 도구 (예정)
-- `tools_music.json` - 음악 & 사운드 도구 (예정)
-- `tools_data.json` - 데이터 & 분석 도구 (예정)
-- `tools_search.json` - 검색 & 리서치 도구 (예정)
-- `tools_translation.json` - 번역 & 언어 도구 (예정)
-- `tools_presentation.json` - 프레젠테이션 도구 (예정)
-- `tools_chatbot.json` - 챗봇 & 자동화 도구 (예정)
-- `tools_education.json` - 교육 & 학습 도구 (예정)
+- `tools_image.json` - 이미지 & 디자인 도구
+- `tools_voice.json` - 음성 & 오디오 도구
+- `tools_video.json` - 영상 & 애니메이션 도구
+- `tools_music.json` - 음악 & 사운드 도구
+- `tools_data.json` - 데이터 & 분석 도구
+- `tools_search.json` - 검색 & 리서치 도구
+- `tools_translation.json` - 번역 & 언어 도구
+- `tools_presentation.json` - 프레젠테이션 도구
+- `tools_chatbot.json` - 챗봇 & 자동화 도구
+- `tools_education.json` - 교육 & 학습 도구
 
 ## 장점
 1. **관리 용이성**: 각 카테고리별로 독립적인 파일 관리
