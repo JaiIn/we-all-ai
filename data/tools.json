@@ -1,0 +1,288 @@
+[
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "description": "GitHub Copilot은 OpenAI와 Microsoft가 공동 개발한 AI 코드 어시스턴트로, 자연어 주석을 실제 코드로 변환하고 실시간으로 코드 제안을 제공합니다. VS Code, IntelliJ 등 주요 IDE에서 사용할 수 있으며, 컨텍스트를 이해하여 정확한 코드 완성을 도와줍니다.",
+    "shortDescription": "AI 코드 어시스턴트로 실시간 코드 제안 및 자연어 주석을 코드로 변환",
+    "category": "coding",
+    "url": "https://github.com/features/copilot",
+    "pricing": {
+      "free": false,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "실시간 코드 완성",
+      "자연어 주석을 코드로 변환",
+      "다양한 프로그래밍 언어 지원",
+      "IDE 통합",
+      "컨텍스트 인식 제안"
+    ],
+    "tags": ["코드생성", "AI어시스턴트", "개발도구", "Microsoft"],
+    "rating": 4.5,
+    "reviewCount": 1250,
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-15"
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "description": "OpenAI에서 개발한 대화형 AI로, 텍스트 생성, 번역, 요약, 창작 등 다양한 언어 작업을 수행할 수 있습니다. GPT-4 모델을 기반으로 하며, 복잡한 질문에 대한 상세한 답변과 창의적인 콘텐츠 생성이 가능합니다.",
+    "shortDescription": "범용 AI 어시스턴트로 텍스트 생성, 번역, 요약, 창작 등 다양한 작업 수행",
+    "category": "writing",
+    "url": "https://chat.openai.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "자연어 대화",
+      "텍스트 생성 및 편집",
+      "다국어 번역",
+      "코드 작성 지원",
+      "창의적 글쓰기"
+    ],
+    "tags": ["대화형AI", "텍스트생성", "번역", "OpenAI"],
+    "rating": 4.7,
+    "reviewCount": 2100,
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-10"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "description": "예술적 품질의 이미지 생성에 특화된 AI 도구로, 텍스트 프롬프트를 통해 고품질의 아트워크를 생성할 수 있습니다. Discord를 통한 독특한 사용자 인터페이스를 제공하며, 커뮤니티 갤러리를 통해 다른 사용자들의 작품을 참고할 수 있습니다.",
+    "shortDescription": "예술적 품질의 이미지 생성 AI, Discord 기반 인터페이스",
+    "category": "image",
+    "url": "https://www.midjourney.com",
+    "pricing": {
+      "free": false,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "고품질 아트워크 생성",
+      "다양한 스타일 지원",
+      "커뮤니티 갤러리",
+      "세밀한 프롬프트 제어",
+      "Discord 통합"
+    ],
+    "tags": ["이미지생성", "아트", "창의적", "Discord"],
+    "rating": 4.6,
+    "reviewCount": 890,
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-08"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "description": "최첨단 AI 음성 합성 기술을 제공하는 플랫폼으로, 자연스러운 음성 생성과 음성 복제 기능을 제공합니다. 29개 언어를 지원하며, 실시간 음성 변환과 감정 표현이 가능한 고품질 AI 보이스를 생성할 수 있습니다.",
+    "shortDescription": "고품질 AI 음성 합성 및 음성 복제 기술, 29개 언어 지원",
+    "category": "voice",
+    "url": "https://elevenlabs.io",
+    "pricing": {
+      "free": true,
+      "startingPrice": 5,
+      "currency": "USD"
+    },
+    "features": [
+      "자연스러운 음성 합성",
+      "음성 복제 기능",
+      "29개 언어 지원",
+      "실시간 음성 변환",
+      "감정 표현 조절"
+    ],
+    "tags": ["음성합성", "TTS", "음성복제", "다국어"],
+    "rating": 4.4,
+    "reviewCount": 650,
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "runway-ml",
+    "name": "Runway ML",
+    "description": "AI 비디오 편집 및 생성 플랫폼으로, 텍스트에서 비디오를 생성하고 실시간 비디오 효과를 적용할 수 있습니다. Green Screen AI, 객체 제거, 스타일 전송 등 다양한 AI 기반 비디오 편집 도구를 제공합니다.",
+    "shortDescription": "AI 비디오 편집 및 생성 플랫폼, 텍스트-비디오 변환 지원",
+    "category": "video",
+    "url": "https://runwayml.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": [
+      "텍스트-비디오 생성",
+      "실시간 비디오 효과",
+      "Green Screen AI",
+      "객체 제거",
+      "스타일 전송"
+    ],
+    "tags": ["비디오생성", "비디오편집", "AI효과", "창의적"],
+    "rating": 4.3,
+    "reviewCount": 420,
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-05"
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "description": "텍스트 프롬프트에서 완전한 곡을 생성하는 AI 음악 생성 플랫폼입니다. 가사, 멜로디, 편곡을 모두 자동으로 생성하며, 다양한 장르와 스타일을 지원합니다. 사용자 지정 가사를 입력하거나 AI가 자동으로 가사를 작성하도록 할 수 있습니다.",
+    "shortDescription": "텍스트에서 완전한 곡 생성, 가사/멜로디/편곡 자동 생성",
+    "category": "music",
+    "url": "https://suno.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": [
+      "자동 가사 작성",
+      "다양한 장르 지원",
+      "사용자 정의 가사",
+      "고품질 오디오 출력",
+      "상업적 사용 가능"
+    ],
+    "tags": ["음악생성", "작곡", "가사작성", "AI작곡"],
+    "rating": 4.2,
+    "reviewCount": 380,
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-07"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "description": "AI 기반 검색 엔진으로, 실시간 웹 정보를 바탕으로 정확하고 최신의 답변을 제공합니다. 출처를 명시한 답변과 후속 질문 제안을 통해 심층적인 리서치를 도와줍니다. 학술 연구, 시장 조사, 일반적인 정보 검색에 특화되어 있습니다.",
+    "shortDescription": "AI 기반 검색 엔진, 실시간 웹 정보로 정확한 답변 제공",
+    "category": "search",
+    "url": "https://www.perplexity.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "실시간 웹 검색",
+      "출처 명시 답변",
+      "후속 질문 제안",
+      "학술 검색",
+      "다국어 지원"
+    ],
+    "tags": ["검색엔진", "리서치", "실시간정보", "출처제공"],
+    "rating": 4.5,
+    "reviewCount": 720,
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-14"
+  },
+  {
+    "id": "deepl",
+    "name": "DeepL",
+    "description": "AI 기반 번역 서비스로, 자연스럽고 정확한 번역을 제공합니다. 31개 언어를 지원하며, 문맥을 이해한 번역과 문서 번역 기능을 제공합니다. 특히 유럽 언어에서 뛰어난 성능을 보이며, 전문 용어와 관용구도 정확하게 번역합니다.",
+    "shortDescription": "AI 기반 고품질 번역 서비스, 31개 언어 지원",
+    "category": "translation",
+    "url": "https://www.deepl.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 5.99,
+      "currency": "USD"
+    },
+    "features": [
+      "고품질 AI 번역",
+      "31개 언어 지원",
+      "문서 번역",
+      "용어집 기능",
+      "API 제공"
+    ],
+    "tags": ["번역", "다국어", "문서번역", "API"],
+    "rating": 4.6,
+    "reviewCount": 1100,
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-11"
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "description": "AI 기반 프레젠테이션 생성 도구로, 텍스트 프롬프트만으로 완전한 프레젠테이션을 자동 생성합니다. 디자인, 레이아웃, 콘텐츠를 모두 AI가 처리하며, 브랜딩과 스타일을 일관성 있게 적용합니다.",
+    "shortDescription": "AI 기반 프레젠테이션 자동 생성, 텍스트 프롬프트만으로 완성",
+    "category": "presentation",
+    "url": "https://gamma.app",
+    "pricing": {
+      "free": true,
+      "startingPrice": 8,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 프레젠테이션 생성",
+      "자동 디자인",
+      "브랜딩 적용",
+      "실시간 협업",
+      "다양한 템플릿"
+    ],
+    "tags": ["프레젠테이션", "자동생성", "디자인", "협업"],
+    "rating": 4.3,
+    "reviewCount": 450,
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-09"
+  },
+  {
+    "id": "intercom-ai",
+    "name": "Intercom AI",
+    "description": "고객 서비스를 위한 AI 챗봇 플랫폼으로, 자동 응답과 고객 문의 분류를 제공합니다. 기존 Intercom 플랫폼과 완벽하게 통합되어 고객 지원 효율성을 크게 향상시킵니다.",
+    "shortDescription": "고객 서비스 AI 챗봇, 자동 응답 및 문의 분류",
+    "category": "chatbot",
+    "url": "https://www.intercom.com/ai",
+    "pricing": {
+      "free": false,
+      "startingPrice": 39,
+      "currency": "USD"
+    },
+    "features": [
+      "AI 챗봇",
+      "자동 응답",
+      "문의 분류",
+      "고객 지원 통합",
+      "분석 대시보드"
+    ],
+    "tags": ["챗봇", "고객서비스", "자동화", "통합"],
+    "rating": 4.1,
+    "reviewCount": 320,
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2024-01-06"
+  },
+  {
+    "id": "khan-academy-ai",
+    "name": "Khan Academy AI",
+    "description": "개인화된 학습을 위한 AI 튜터 시스템으로, 학생의 학습 진도와 이해도를 분석하여 맞춤형 학습 경로를 제공합니다. 수학, 과학, 역사 등 다양한 과목에서 AI 기반 개인 지도를 받을 수 있습니다.",
+    "shortDescription": "개인화된 AI 튜터 시스템, 맞춤형 학습 경로 제공",
+    "category": "education",
+    "url": "https://www.khanacademy.org/ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "개인화된 학습",
+      "AI 튜터",
+      "학습 진도 분석",
+      "다양한 과목",
+      "무료 이용"
+    ],
+    "tags": ["교육", "AI튜터", "개인화학습", "무료"],
+    "rating": 4.7,
+    "reviewCount": 890,
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2024-01-13"
+  }
+]
