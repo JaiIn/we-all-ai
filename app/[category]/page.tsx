@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { use } from "react";
 import { getToolsByCategory, getCategoryById } from "@/lib/data";
+import AnimatedBackground from "@/components/common/AnimatedBackground";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import CategoryHeader from "@/components/category/CategoryHeader";
 import ToolCard from "@/components/category/ToolCard";
@@ -36,11 +37,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   ];
 
   return (
-    <div className="relative">
-      {/* 배경 그라데이션 */}
-      <div className="fixed inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900 -z-10" />
-      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100 via-transparent to-transparent dark:from-blue-900/20 -z-10" />
-      
+    <AnimatedBackground>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
         {/* 브레드크럼 */}
         <Breadcrumb items={breadcrumbItems} />
@@ -77,6 +74,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           }
         }
       `}</style>
-    </div>
+    </AnimatedBackground>
   );
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getCategories, getSiteStats } from "@/lib/data";
 import { useEffect, useState } from "react";
 import CategoryIcon from "@/components/common/CategoryIcon";
+import AnimatedBackground from "@/components/common/AnimatedBackground";
 
 export default function Home() {
   const categories = getCategories();
@@ -34,11 +35,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative">
-      {/* 배경 그라데이션 */}
-      <div className="fixed inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900 -z-10" />
-      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100 via-transparent to-transparent dark:from-blue-900/20 -z-10" />
-      
+    <AnimatedBackground>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section - 첫 번째 화면 */}
         <section className={`min-h-screen flex items-center justify-center text-center transition-all duration-1000 ${
@@ -191,6 +188,6 @@ export default function Home() {
           }
         }
       `}</style>
-    </div>
+    </AnimatedBackground>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { getCategories } from "@/lib/data";
-import BackgroundGradient from "@/components/common/BackgroundGradient";
+import AnimatedBackground from "@/components/common/AnimatedBackground";
 import FadeInUpAnimation from "@/components/common/FadeInUpAnimation";
 import CategoriesPageHeader from "@/components/category/CategoriesPageHeader";
 import CategoryCard from "@/components/category/CategoryCard";
@@ -11,7 +11,7 @@ export default function CategoriesPage() {
   const categories = getCategories();
 
   return (
-    <BackgroundGradient>
+    <AnimatedBackground>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
         {/* 헤더 */}
         <CategoriesPageHeader />
@@ -29,6 +29,6 @@ export default function CategoriesPage() {
       
       {/* CSS 애니메이션 */}
       <FadeInUpAnimation />
-    </BackgroundGradient>
+    </AnimatedBackground>
   );
 }
