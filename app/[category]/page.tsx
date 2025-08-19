@@ -2,16 +2,17 @@
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { use } from "react";
 import { getCategories, getToolsByCategory, getCategoryById } from "@/lib/data";
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     category: string;
-  };
+  }>;
 }
 
 export default function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = params;
+  const { category } = use(params);
   const categories = getCategories();
   const categoryInfo = getCategoryById(category);
   const tools = getToolsByCategory(category);
