@@ -9,7 +9,7 @@ import voiceTools from "@/data/tools/tools_voice.json";
 import videoTools from "@/data/tools/tools_video.json";
 import musicTools from "@/data/tools/tools_music.json";
 import dataTools from "@/data/tools/tools_data.json";
-import searchTools from "@/data/tools/tools_search.json";
+import researchTools from "@/data/tools/tools_research.json";
 import translationTools from "@/data/tools/tools_translation.json";
 import presentationTools from "@/data/tools/tools_presentation.json";
 import chatbotTools from "@/data/tools/tools_chatbot.json";
@@ -30,7 +30,7 @@ export function getAllTools(): AiTool[] {
     ...videoTools,
     ...musicTools,
     ...dataTools,
-    ...searchTools,
+    ...researchTools,
     ...translationTools,
     ...presentationTools,
     ...chatbotTools,
@@ -66,9 +66,9 @@ export async function getToolsByCategory(categoryId: string) {
       case 'data':
         const dataTools = await import('@/data/tools/tools_data.json');
         return dataTools.default as AiTool[];
-      case 'search':
-        const searchTools = await import('@/data/tools/tools_search.json');
-        return searchTools.default as AiTool[];
+      case 'research':
+        const researchTools = await import('@/data/tools/tools_research.json');
+        return researchTools.default as AiTool[];
       case 'translation':
         const translationTools = await import('@/data/tools/tools_translation.json');
         return translationTools.default as AiTool[];
@@ -108,8 +108,8 @@ export function getToolsByCategorySync(categoryId: string): AiTool[] {
       return musicTools as AiTool[];
     case 'data':
       return dataTools as AiTool[];
-    case 'search':
-      return searchTools as AiTool[];
+    case 'research':
+      return researchTools as AiTool[];
     case 'translation':
       return translationTools as AiTool[];
     case 'presentation':

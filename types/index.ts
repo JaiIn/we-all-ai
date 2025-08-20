@@ -7,7 +7,7 @@ export type Category =
   | 'video' 
   | 'music'
   | 'data'
-  | 'search'
+  | 'research'
   | 'translation'
   | 'presentation'
   | 'chatbot'

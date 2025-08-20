@@ -214,5 +214,29 @@
     "isPopular": false,
     "isFeatured": false,
     "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "google-gemini",
+    "name": "Google Gemini",
+    "description": "Google에서 개발한 차세대 AI 어시스턴트로, 멀티모달 기능을 지원하여 텍스트, 이미지, 코드를 함께 처리할 수 있습니다. 실시간 웹 검색 결과를 반영한 답변과 Google 서비스와의 완벽한 통합을 제공합니다. 긴 문맥 처리와 다양한 언어 지원으로 복합적인 작업에 뛰어난 성능을 보입니다.",
+    "shortDescription": "Google의 멀티모달 AI 어시스턴트, 실시간 웹 검색 및 Google 서비스 통합",
+    "category": "writing",
+    "url": "https://gemini.google.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": [
+      "멀티모달 처리 (텍스트, 이미지, 코드)",
+      "실시간 웹 검색",
+      "Google 서비스 통합",
+      "긴 문맥 처리",
+      "다국어 지원"
+    ],
+    "tags": ["대화형AI", "멀티모달", "실시간검색", "Google"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-20"
   }
 ]

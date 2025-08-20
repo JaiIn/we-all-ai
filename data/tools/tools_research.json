@@ -4,7 +4,7 @@
     "name": "Perplexity AI",
     "description": "AI 기반 검색 엔진으로, 실시간 웹 정보를 바탕으로 정확하고 최신의 답변을 제공합니다. 출처를 명시한 답변과 후속 질문 제안을 통해 심층적인 리서치를 도와줍니다. 학술 연구, 시장 조사, 일반적인 정보 검색에 특화되어 있습니다.",
     "shortDescription": "AI 기반 검색 엔진, 실시간 웹 정보로 정확한 답변 제공",
-    "category": "search",
+    "category": "research",
     "url": "https://www.perplexity.ai",
     "pricing": {
       "free": true,
@@ -28,7 +28,7 @@
     "name": "You.com",
     "description": "AI 기반 검색 엔진으로, 개인화된 검색 결과와 AI 어시스턴트 기능을 결합했습니다. 다양한 AI 모드를 제공하여 용도에 맞는 검색과 답변을 제공합니다.",
     "shortDescription": "개인화된 AI 검색 엔진, 다양한 AI 모드 제공",
-    "category": "search",
+    "category": "research",
     "url": "https://you.com",
     "pricing": {
       "free": true,
@@ -52,7 +52,7 @@
     "name": "Consensus",
     "description": "과학 논문과 연구 자료에 특화된 AI 검색 엔진입니다. 수백만 개의 논문을 분석하여 과학적 합의점을 찾아주며, 연구자와 학자들의 리서치를 지원합니다.",
     "shortDescription": "과학 논문 특화 AI 검색, 연구 자료 분석",
-    "category": "search",
+    "category": "research",
     "url": "https://consensus.app",
     "pricing": {
       "free": true,
@@ -76,7 +76,7 @@
     "name": "Microsoft Copilot (Search)",
     "description": "Bing 검색 엔진 및 Microsoft 365 생태계에 통합된 Copilot은 OpenAI의 GPT-4 모델을 사용하여 대화형 검색 결과를 제공합니다. Word, Excel, Teams와 같은 Microsoft 제품 사용자에게 특히 유용합니다.",
     "shortDescription": "Bing 검색 및 Microsoft 365에 통합된 AI 비서",
-    "category": "search",
+    "category": "research",
     "url": "https://copilot.microsoft.com",
     "pricing": {
       "free": true,
@@ -94,7 +94,7 @@
     "name": "Brave Search",
     "description": "개인 정보 보호에 중점을 둔 것으로 알려진 Brave Search는 사용자를 추적하거나 개인 데이터를 수집하지 않고 AI 기반 검색 경험을 제공합니다.",
     "shortDescription": "개인 정보 보호에 중점을 둔 AI 검색 엔진",
-    "category": "search",
+    "category": "research",
     "url": "https://search.brave.com",
     "pricing": {
       "free": true,
@@ -112,7 +112,7 @@
     "name": "Komo AI",
     "description": "매우 타겟팅된 검색 결과가 필요한 사용자를 위해 설계되었으며, 특정 요구에 맞게 AI 응답을 조정하는 '페르소나' 및 검색 결과를 시각화하는 '마인드 맵'과 같은 고유한 기능을 제공합니다.",
     "shortDescription": "페르소나 및 마인드 맵 기능이 있는 타겟 검색",
-    "category": "search",
+    "category": "research",
     "url": "https://komo.ai",
     "pricing": {
       "free": true,
@@ -130,7 +130,7 @@
     "name": "Arc Search",
     "description": "이 모바일 우선 도구는 브라우저, 검색 엔진 및 AI를 단일 경험으로 결합합니다. 'Browse for Me' 기능은 여러 소스에서 정보를 수집하는 프로세스를 자동화하고 요약된 결과로 새 웹 페이지를 만듭니다.",
     "shortDescription": "'Browse for Me' 기능이 있는 모바일 우선 AI 검색",
-    "category": "search",
+    "category": "research",
     "url": "https://arc.net/search",
     "pricing": {
       "free": true,
@@ -142,5 +142,29 @@
     "isPopular": false,
     "isFeatured": false,
     "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "lmarena",
+    "name": "LMArena (Chatbot Arena)",
+    "description": "LMSYS와 UC Berkeley에서 개발한 AI 모델 평가 플랫폼으로, 사용자들이 두 개의 익명 AI 모델과 대화하며 어느 것이 더 나은지 투표하는 방식으로 운영됩니다. 380만 이상의 사용자 투표를 기반으로 한 Elo 레이팅 시스템을 통해 GPT-4, Claude, Gemini 등 90개 이상의 LLM을 평가하고 실시간 리더보드를 제공합니다. AI 모델 선택 시 가장 신뢰할 수 있는 벤치마크 플랫폼입니다.",
+    "shortDescription": "AI 모델 성능 평가 플랫폼, 사용자 투표 기반 Elo 레이팅 시스템",
+    "category": "research",
+    "url": "https://lmarena.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "익명 AI 모델 배틀",
+      "Elo 레이팅 시스템",
+      "실시간 리더보드",
+      "90개 이상 LLM 평가",
+      "커뮤니티 기반 평가"
+    ],
+    "tags": ["AI평가", "벤치마크", "리더보드", "모델비교"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-20"
   }
 ]
