@@ -52,7 +52,7 @@ export default function Home() {
     <>
       <StructuredData />
       <AnimatedBackground>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         {/* Hero Section - 첫 번째 화면 */}
         <section className={`min-h-screen flex items-center justify-center text-center transition-all duration-1000 ${
           isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
