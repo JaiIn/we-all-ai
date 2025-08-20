@@ -40,8 +40,58 @@ export function getAllTools(): AiTool[] {
   return allTools;
 }
 
-// 특정 카테고리의 도구들 가져오기
-export function getToolsByCategory(categoryId: string): AiTool[] {
+// 데이터 최적화 - 필요한 데이터만 로드
+export async function getToolsByCategory(categoryId: string) {
+  try {
+    // 동적 import로 필요한 카테고리만 로드
+    switch (categoryId) {
+      case 'coding':
+        const codingTools = await import('@/data/tools/tools_coding.json');
+        return codingTools.default as AiTool[];
+      case 'writing':
+        const writingTools = await import('@/data/tools/tools_writing.json');
+        return writingTools.default as AiTool[];
+      case 'image':
+        const imageTools = await import('@/data/tools/tools_image.json');
+        return imageTools.default as AiTool[];
+      case 'voice':
+        const voiceTools = await import('@/data/tools/tools_voice.json');
+        return voiceTools.default as AiTool[];
+      case 'video':
+        const videoTools = await import('@/data/tools/tools_video.json');
+        return videoTools.default as AiTool[];
+      case 'music':
+        const musicTools = await import('@/data/tools/tools_music.json');
+        return musicTools.default as AiTool[];
+      case 'data':
+        const dataTools = await import('@/data/tools/tools_data.json');
+        return dataTools.default as AiTool[];
+      case 'search':
+        const searchTools = await import('@/data/tools/tools_search.json');
+        return searchTools.default as AiTool[];
+      case 'translation':
+        const translationTools = await import('@/data/tools/tools_translation.json');
+        return translationTools.default as AiTool[];
+      case 'presentation':
+        const presentationTools = await import('@/data/tools/tools_presentation.json');
+        return presentationTools.default as AiTool[];
+      case 'chatbot':
+        const chatbotTools = await import('@/data/tools/tools_chatbot.json');
+        return chatbotTools.default as AiTool[];
+      case 'education':
+        const educationTools = await import('@/data/tools/tools_education.json');
+        return educationTools.default as AiTool[];
+      default:
+        return [];
+    }
+  } catch (error) {
+    console.error(`Error loading tools for category ${categoryId}:`, error);
+    return [];
+  }
+}
+
+// 기존 동기 버전 (하위 호환성을 위해 유지)
+export function getToolsByCategorySync(categoryId: string): AiTool[] {
   // 각 카테고리별로 직접 해당 파일에서 가져오기
   switch (categoryId) {
     case 'coding':

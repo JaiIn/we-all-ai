@@ -1,11 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { getCategories, getSiteStats } from "@/lib/data";
 import { useEffect, useState } from "react";
 import CategoryIcon from "@/components/common/CategoryIcon";
 import AnimatedBackground from "@/components/common/AnimatedBackground";
-import SearchSection from "@/components/search/SearchSection";
+
+// 동적 import로 성능 최적화
+const SearchSection = dynamic(() => import("@/components/search/SearchSection"), {
+  loading: () => (
+    <div className="max-w-3xl mx-auto mb-8">
+      <div className="animate-pulse bg-gray-200 dark:bg-gray-700 h-16 rounded-2xl"></div>
+    </div>
+  ),
+});
+
+const StructuredData = dynamic(() => import("@/components/common/StructuredData"), {
+  ssr: false,
+});
 
 export default function Home() {
   const categories = getCategories();
@@ -36,7 +49,9 @@ export default function Home() {
   }, []);
 
   return (
-    <AnimatedBackground>
+    <>
+      <StructuredData />
+      <AnimatedBackground>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section - 첫 번째 화면 */}
         <section className={`min-h-screen flex items-center justify-center text-center transition-all duration-1000 ${
@@ -192,6 +207,7 @@ export default function Home() {
           }
         }
       `}</style>
-    </AnimatedBackground>
+      </AnimatedBackground>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getCategoryById, getToolsByCategorySync, getCategories } from "@/lib/data";
+import { getCategoryById, getToolsByCategorySync } from "@/lib/data";
 import CategoryPageClient from "./CategoryPageClient";
 
 interface CategoryPageProps {
@@ -9,20 +9,14 @@ interface CategoryPageProps {
   }>;
 }
 
-// 정적 파라미터 생성
-export function generateStaticParams() {
-  const categories = getCategories();
-  return categories.map((category) => ({
-    category: category.id,
-  }));
-}
-
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params;
   const categoryInfo = getCategoryById(category);
   
   if (!categoryInfo) {
-    notFound();
+    return {
+      title: '페이지를 찾을 수 없습니다',
+    };
   }
 
   const tools = getToolsByCategorySync(category);
@@ -50,4 +44,43 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category } = await params;
   return <CategoryPageClient category={category} />;
+}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
+        {/* 브레드크럼 */}
+        <Breadcrumb items={breadcrumbItems} />
+
+        {/* 카테고리 헤더 */}
+        <CategoryHeader
+          categoryInfo={categoryInfo}
+          freeToolsCount={freeTools.length}
+          paidToolsCount={paidTools.length}
+          totalToolsCount={tools.length}
+        />
+
+        {/* 도구 그리드 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {tools.map((tool, index) => (
+            <ToolCard key={tool.id} tool={tool} index={index} />
+          ))}
+        </div>
+
+        {/* 하단 네비게이션 */}
+        <CategoryNavigation />
+      </div>
+      
+      {/* CSS 애니메이션 */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+    </AnimatedBackground>
+  );
 }

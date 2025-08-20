@@ -1,34 +1,15 @@
-"use client";
+import { Metadata } from 'next';
+import CategoriesPageClient from './CategoriesPageClient';
 
-import { getCategories } from "@/lib/data";
-import AnimatedBackground from "@/components/common/AnimatedBackground";
-import FadeInUpAnimation from "@/components/common/FadeInUpAnimation";
-import CategoriesPageHeader from "@/components/category/CategoriesPageHeader";
-import CategoryCard from "@/components/category/CategoryCard";
-import CategoriesPageFooter from "@/components/category/CategoriesPageFooter";
+export const metadata: Metadata = {
+  title: 'AI 도구 카테고리',
+  description: '12개 카테고리의 AI 도구들을 탐색해보세요. 코딩, 글쓰기, 이미지 생성, 음성 합성, 영상 제작 등 다양한 분야의 AI 도구를 확인하세요.',
+  openGraph: {
+    title: 'AI 도구 카테고리 | We All AI',
+    description: '12개 카테고리의 AI 도구들을 탐색해보세요.',
+  },
+};
 
 export default function CategoriesPage() {
-  const categories = getCategories();
-
-  return (
-    <AnimatedBackground>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
-        {/* 헤더 */}
-        <CategoriesPageHeader />
-
-        {/* 카테고리별 AI 도구 그리드 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {categories.map((category, index) => (
-            <CategoryCard key={category.id} category={category} index={index} />
-          ))}
-        </div>
-
-        {/* 하단 CTA */}
-        <CategoriesPageFooter />
-      </div>
-      
-      {/* CSS 애니메이션 */}
-      <FadeInUpAnimation />
-    </AnimatedBackground>
-  );
+  return <CategoriesPageClient />;
 }

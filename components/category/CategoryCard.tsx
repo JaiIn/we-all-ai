@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CategoryInfo } from "@/types";
 import CategoryIcon from "@/components/common/CategoryIcon";
 import CategoryToolsPreview from "./CategoryToolsPreview";
-import { getToolsByCategory } from "@/lib/data";
+import { getToolsByCategorySync } from "@/lib/data";
 
 interface CategoryCardProps {
   category: CategoryInfo;
@@ -10,7 +10,7 @@ interface CategoryCardProps {
 }
 
 export default function CategoryCard({ category, index }: CategoryCardProps) {
-  const categoryTools = getToolsByCategory(category.id).slice(0, 2);
+  const categoryTools = getToolsByCategorySync(category.id).slice(0, 2);
   
   return (
     <div 
