@@ -142,5 +142,77 @@
     "isPopular": false,
     "isFeatured": false,
     "lastUpdated": "2024-01-09"
+  },
+  {
+    "id": "beatoven-ai",
+    "name": "Beatoven.ai",
+    "description": "비디오, 팟캐스트, 게임을 위한 고품질의 로열티 프리 배경 음악을 만드는 데 이상적인 도구입니다. 사용자 친화적인 인터페이스를 가지고 있으며 무료 플랜에서 무제한 트랙 생성을 허용합니다.",
+    "shortDescription": "로열티 프리 고품질 배경 음악 제작 도구",
+    "category": "music",
+    "url": "https://www.beatoven.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 3,
+      "currency": "USD"
+    },
+    "features": ["로열티 프리 배경 음악", "고품질 오디오", "사용자 친화적 인터페이스", "무제한 트랙 생성 (무료 플랜)", "장르 및 분위기 기반 생성"],
+    "tags": ["배경-음악", "로열티-프리", "팟캐스트", "게임-음악"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "soundful",
+    "name": "Soundful",
+    "description": "콘텐츠 제작자와 브랜드를 위한 로열티 프리 트랙을 생성하는 플랫폼입니다. 사용자는 150개 이상의 템플릿에서 선택하고 템포 및 키와 같은 매개변수를 사용자 지정할 수 있습니다.",
+    "shortDescription": "콘텐츠 제작자를 위한 로열티 프리 음악 생성",
+    "category": "music",
+    "url": "https://soundful.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 59.99,
+      "currency": "USD"
+    },
+    "features": ["로열티 프리 트랙", "150개 이상의 템플릿", "사용자 지정 가능한 매개변수", "브랜드용 음악", "고품질 생성"],
+    "tags": ["로열티-프리", "콘텐츠-제작자", "브랜드-음악", "템플릿"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "splash-pro",
+    "name": "Splash Pro",
+    "description": "프롬프트를 입력하고 BPM, 키, 모드를 선택하여 독특한 로열티 프리 음악을 만들 수 있는 도구입니다.",
+    "shortDescription": "사용자 지정 매개변수로 독특한 음악 생성",
+    "category": "music",
+    "url": "https://www.splashpro.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": ["프롬프트 기반 생성", "BPM, 키, 모드 제어", "독특한 음악", "로열티 프리", "간단한 인터페이스"],
+    "tags": ["음악-생성", "사용자-지정", "BPM", "로열티-프리"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "songr",
+    "name": "SongR",
+    "description": "텍스트를 노래로 변환하는 데 중점을 둔 플랫폼입니다. 장르를 선택하고 키워드를 입력한 다음 AI 음성을 선택하여 가사가 포함된 완전한 노래를 생성할 수 있습니다.",
+    "shortDescription": "텍스트를 AI 음성 노래로 변환하는 플랫폼",
+    "category": "music",
+    "url": "https://www.songr.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["텍스트-투-송", "장르 선택", "키워드 기반 가사", "AI 보컬", "완전한 노래 생성"],
+    "tags": ["텍스트-투-송", "AI-보컬", "가사-생성", "작곡"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

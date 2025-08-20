@@ -22,6 +22,7 @@ export interface UseSearchProps {
 
 export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchProps = {}) {
   const [query, setQuery] = useState(initialQuery);
+  const [searchQuery, setSearchQuery] = useState(initialQuery); // 실제 검색에 사용되는 쿼리
   const [filters, setFilters] = useState<SearchFilters>({
     pricing: 'all',
     ...initialFilters,
@@ -32,7 +33,7 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
   const categories = getCategories();
 
   const searchResults = useMemo(() => {
-    if (!query.trim() && !hasActiveFilters()) {
+    if (!searchQuery.trim() && !hasActiveFilters()) {
       return {
         tools: [],
         totalCount: 0,
@@ -42,16 +43,21 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
 
     let filteredTools = allTools;
 
-    // 텍스트 검색
-    if (query.trim()) {
-      const searchTerm = query.toLowerCase().trim();
-      filteredTools = filteredTools.filter(tool => 
-        tool.name.toLowerCase().includes(searchTerm) ||
-        tool.description?.toLowerCase().includes(searchTerm) ||
-        tool.shortDescription?.toLowerCase().includes(searchTerm) ||
-        tool.features?.some(feature => feature.toLowerCase().includes(searchTerm)) ||
-        tool.tags?.some(tag => tag.toLowerCase().includes(searchTerm))
-      );
+    // 텍스트 검색 - 이름과 카테고리만 적용
+    if (searchQuery.trim()) {
+      const searchTerm = searchQuery.toLowerCase().trim();
+      const categoryNames = categories.map(cat => cat.name.toLowerCase());
+      
+      filteredTools = filteredTools.filter(tool => {
+        // 도구 이름에서 검색
+        const nameMatch = tool.name.toLowerCase().includes(searchTerm);
+        
+        // 카테고리 이름에서 검색
+        const currentCategory = categories.find(cat => cat.id === tool.category);
+        const categoryMatch = currentCategory ? currentCategory.name.toLowerCase().includes(searchTerm) : false;
+        
+        return nameMatch || categoryMatch;
+      });
     }
 
     // 카테고리 필터
@@ -77,10 +83,10 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
     }
 
     // 관련성에 따른 정렬
-    if (query.trim()) {
+    if (searchQuery.trim()) {
       filteredTools = filteredTools.sort((a, b) => {
-        const aScore = calculateRelevanceScore(a, query);
-        const bScore = calculateRelevanceScore(b, query);
+        const aScore = calculateRelevanceScore(a, searchQuery);
+        const bScore = calculateRelevanceScore(b, searchQuery);
         return bScore - aScore;
       });
     }
@@ -90,7 +96,7 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
       totalCount: filteredTools.length,
       hasMore: false
     };
-  }, [query, filters, allTools]);
+  }, [searchQuery, filters, allTools, categories]);
 
   function hasActiveFilters(): boolean {
     return !!(
@@ -113,24 +119,10 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
       }
     }
 
-    // 짧은 설명에서 매칭
-    if (tool.shortDescription?.toLowerCase().includes(searchTerm)) {
-      score += 5;
-    }
-
-    // 설명에서 매칭
-    if (tool.description?.toLowerCase().includes(searchTerm)) {
-      score += 3;
-    }
-
-    // 기능에서 매칭
-    if (tool.features?.some(feature => feature.toLowerCase().includes(searchTerm))) {
-      score += 2;
-    }
-
-    // 태그에서 매칭
-    if (tool.tags?.some(tag => tag.toLowerCase().includes(searchTerm))) {
-      score += 2;
+    // 카테고리 이름에서 매칭
+    const currentCategory = categories.find(cat => cat.id === tool.category);
+    if (currentCategory && currentCategory.name.toLowerCase().includes(searchTerm)) {
+      score += 8;
     }
 
     // 인기도 보너스
@@ -150,7 +142,12 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
 
   function clearSearch() {
     setQuery('');
+    setSearchQuery('');
     clearFilters();
+  }
+
+  function handleSearch(newQuery: string) {
+    setSearchQuery(newQuery.trim());
   }
 
   // 검색 제안을 위한 함수
@@ -180,6 +177,8 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
   return {
     query,
     setQuery,
+    searchQuery,
+    handleSearch,
     filters,
     updateFilters,
     clearFilters,

@@ -70,5 +70,95 @@
     "isPopular": true,
     "isFeatured": false,
     "lastUpdated": "2024-01-11"
+  },
+  {
+    "id": "ibm-watson-assistant",
+    "name": "IBM Watson Assistant",
+    "description": "고급 자연어 처리 및 보안 기능으로 유명한 강력한 엔터프라이즈급 플랫폼으로, 의료 및 금융과 같은 규제 산업에 적합합니다.",
+    "shortDescription": "엔터프라이즈급 보안 및 NLP를 갖춘 AI 챗봇 플랫폼",
+    "category": "chatbot",
+    "url": "https://www.ibm.com/products/watson-assistant",
+    "pricing": {
+      "free": true,
+      "startingPrice": 140,
+      "currency": "USD"
+    },
+    "features": ["고급 NLP", "엔터프라이즈급 보안", "음성 및 텍스트 지원", "규제 산업 적합", "다양한 통합"],
+    "tags": ["엔터프라이즈", "보안", "NLP", "IBM-Watson"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "google-cloud-dialogflow",
+    "name": "Google Cloud Dialogflow",
+    "description": "Google의 AI로 구동되는 이 플랫폼은 음성 및 텍스트 모두에 대한 지능형 챗봇을 만들기 위한 고급 NLP 및 기계 학습 기능을 제공합니다. 다른 Google Cloud 서비스와 원활하게 통합됩니다.",
+    "shortDescription": "Google의 고급 NLP 및 기계 학습 기반 챗봇",
+    "category": "chatbot",
+    "url": "https://cloud.google.com/dialogflow",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["고급 NLP", "기계 학습", "음성 및 텍스트 챗봇", "Google Cloud 통합", "확장 가능한 아키텍처"],
+    "tags": ["Google-Cloud", "NLP", "기계-학습", "음성-봇"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "tidio",
+    "name": "Tidio",
+    "description": "중소기업에게 인기 있는 선택인 Tidio는 사용자 친화적인 라이브 채팅 위젯과 AI 기반 챗봇을 제공하여 고객과 실시간으로 소통합니다.",
+    "shortDescription": "중소기업을 위한 사용자 친화적인 라이브 채팅 및 AI 챗봇",
+    "category": "chatbot",
+    "url": "https://www.tidio.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 29,
+      "currency": "USD"
+    },
+    "features": ["라이브 채팅 위젯", "AI 기반 챗봇", "실시간 고객 참여", "사용자 친화적 인터페이스", "다양한 통합"],
+    "tags": ["SMB", "라이브-챗", "고객-참여", "사용자-친화적"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "manychat",
+    "name": "Manychat",
+    "description": "소셜 미디어를 많이 활용하는 비즈니스에 이상적인 Manychat은 Instagram, Facebook Messenger, WhatsApp과 같은 플랫폼에서 대화를 자동화하는 데 도움이 됩니다.",
+    "shortDescription": "소셜 미디어 대화 자동화에 이상적인 챗봇",
+    "category": "chatbot",
+    "url": "https://manychat.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 15,
+      "currency": "USD"
+    },
+    "features": ["소셜 미디어 자동화", "Instagram, Facebook, WhatsApp 지원", "드래그 앤 드롭 빌더", "성장 도구", "분석"],
+    "tags": ["소셜-미디어", "마케팅-자동화", "Instagram", "Facebook"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "chatbase",
+    "name": "Chatbase",
+    "description": "이 플랫폼을 사용하면 자체 비즈니스 데이터로 훈련된 AI 에이전트를 구축하여 특정하고 복잡한 고객 문제를 처리할 수 있습니다.",
+    "shortDescription": "자체 데이터로 훈련된 맞춤형 AI 챗봇 구축",
+    "category": "chatbot",
+    "url": "https://www.chatbase.co",
+    "pricing": {
+      "free": true,
+      "startingPrice": 19,
+      "currency": "USD"
+    },
+    "features": ["자체 데이터로 훈련", "맞춤형 AI 에이전트", "복잡한 문제 해결", "웹사이트에 임베드", "API 액세스"],
+    "tags": ["맞춤형-챗봇", "데이터-기반", "AI-에이전트", "임베드"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

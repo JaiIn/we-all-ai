@@ -8,18 +8,11 @@ interface SearchResultsProps {
 export default function SearchResults({ tools }: SearchResultsProps) {
   return (
     <div>
-      {/* 정렬 옵션 */}
-      <div className="flex items-center justify-between mb-6">
+      {/* 검색 결과 제목 */}
+      <div className="mb-6">
         <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
           검색 결과
         </h2>
-        
-        <select className="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-700/50 dark:text-white text-sm">
-          <option value="relevance">관련성순</option>
-          <option value="name">이름순</option>
-          <option value="popular">인기순</option>
-          <option value="free">무료 우선</option>
-        </select>
       </div>
 
       {/* 도구 그리드 */}

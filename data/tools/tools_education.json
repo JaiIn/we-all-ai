@@ -70,5 +70,95 @@
     "isPopular": true,
     "isFeatured": true,
     "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "brisk-teaching",
+    "name": "Brisk Teaching",
+    "description": "백만 명 이상의 교육자가 사용하는 이 인기 있는 AI 도구는 Google Docs와 같은 기존 도구와 통합되어 커리큘럼 작성, 피드백 제공 및 교육 차별화를 지원합니다.",
+    "shortDescription": "교육자를 위한 AI 기반 커리큘럼 및 피드백 도구",
+    "category": "education",
+    "url": "https://www.briskteaching.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["커리큘럼 생성", "피드백 제공", "교육 차별화", "Google Docs 통합", "수업 계획 생성"],
+    "tags": ["교사용-도구", "커리큘럼", "피드백", "수업-계획"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "magicschool-ai",
+    "name": "MagicSchool AI",
+    "description": "5백만 명 이상의 교사들이 신뢰하는 이 플랫폼은 수업 계획, 과제 작성, 뉴스레터 작성과 같은 작업을 위한 60개 이상의 AI 기반 도구를 제공합니다.",
+    "shortDescription": "교사를 위한 60개 이상의 AI 도구를 갖춘 플랫폼",
+    "category": "education",
+    "url": "https://www.magicschool.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["60개 이상의 AI 도구", "수업 계획 도우미", "과제 생성기", "뉴스레터 작성기", "루브릭 생성기"],
+    "tags": ["교사용-도구", "수업-계획", "과제-생성", "AI-플랫폼"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "description": "이 AI 기반 작문 도우미는 문법, 스타일 및 표절에 대한 실시간 피드백을 제공하여 학생들이 작문을 개선하도록 돕습니다.",
+    "shortDescription": "문법, 스타일, 표절 검사를 위한 AI 작문 도우미",
+    "category": "education",
+    "url": "https://www.grammarly.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": ["실시간 문법 검사", "스타일 제안", "표절 감지", "명확성 제안", "브라우저 확장 프로그램"],
+    "tags": ["작문-도우미", "문법-검사", "표절", "학생용-도구"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "description": "이 도구는 강의 및 회의를 녹음하여 음성을 텍스트로 변환할 수 있어 강의 자료를 복습하는 데 도움이 될 수 있습니다.",
+    "shortDescription": "강의 및 회의를 위한 AI 기반 음성-텍스트 변환",
+    "category": "education",
+    "url": "https://otter.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": ["실시간 녹음", "음성-텍스트 변환", "화자 식별", "키워드 검색", "다양한 내보내기 옵션"],
+    "tags": ["녹음", "음성-인식", "강의-노트", "학생용-도구"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "mindgrasp",
+    "name": "Mindgrasp",
+    "description": "이 AI 학습 플랫폼은 교육 콘텐츠를 노트, 요약, 플래시카드 및 퀴즈로 변환할 수 있습니다.",
+    "shortDescription": "교육 콘텐츠를 노트, 요약, 퀴즈로 변환하는 AI",
+    "category": "education",
+    "url": "https://mindgrasp.ai",
+    "pricing": {
+      "free": false,
+      "startingPrice": 9.99,
+      "currency": "USD"
+    },
+    "features": ["자동 노트 생성", "콘텐츠 요약", "플래시카드 생성", "퀴즈 생성", "다양한 파일 형식 지원"],
+    "tags": ["학습-도구", "노트-필기", "요약", "퀴즈-생성"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

@@ -142,5 +142,77 @@
     "isPopular": false,
     "isFeatured": true,
     "lastUpdated": "2024-01-09"
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "description": "반복적인 글쓰기 작업에 적합하며 저렴한 비용으로 알려진 이 도구는 광고 카피, 제품 설명, 소셜 미디어 캡션과 같은 마케팅 중심 콘텐츠 제작에 탁월합니다.",
+    "shortDescription": "마케팅 카피 및 반복적인 글쓰기를 위한 경제적인 AI",
+    "category": "writing",
+    "url": "https://www.copy.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 36,
+      "currency": "USD"
+    },
+    "features": ["반복적 글쓰기", "마케팅 카피 생성", "광고 카피", "제품 설명", "소셜 미디어 캡션"],
+    "tags": ["마케팅", "카피라이팅", "소셜미디어", "경제적인"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "rytr",
+    "name": "Rytr",
+    "description": "무료 플랜을 제공하는 저렴한 옵션인 Rytr은 콘텐츠를 빠르게 생성해야 하는 사람들에게 적합합니다. 다양한 템플릿을 제공하며 문법 및 스타일 개선을 지원합니다.",
+    "shortDescription": "무료 플랜을 제공하는 저렴하고 빠른 AI 작가",
+    "category": "writing",
+    "url": "https://rytr.me",
+    "pricing": {
+      "free": true,
+      "startingPrice": 9,
+      "currency": "USD"
+    },
+    "features": ["무료 플랜 제공", "빠른 콘텐츠 생성", "다양한 템플릿", "문법 및 스타일 검사", "브라우저 확장 기능"],
+    "tags": ["무료", "경제적인", "템플릿", "문법"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "sudowrite",
+    "name": "Sudowrite",
+    "description": "소설 작가들 사이에서 상당한 인기를 얻고 있는 Sudowrite는 브레인스토밍, 글쓰기, 수정 도구를 포함하여 스토리텔링 과정을 지원하는 기능들로 가득 차 있습니다.",
+    "shortDescription": "소설 및 스토리텔링을 위한 AI 글쓰기 보조 도구",
+    "category": "writing",
+    "url": "https://www.sudowrite.com",
+    "pricing": {
+      "free": false,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": ["스토리텔링 도구", "브레인스토밍 지원", "글쓰기 및 수정 보조", "캐릭터 생성", "플롯 개발"],
+    "tags": ["창작", "소설", "스토리텔링", "작가"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "lex",
+    "name": "Lex",
+    "description": "글쓰기 전문가를 위한 도구로 설명되는 Lex는 Google Docs와 유사한 깔끔하고 방해 없는 인터페이스 내에서 AI 기반 편집기처럼 작동합니다. 문장 재작성, 진부한 표현 확인, 간결성 확보에 도움을 줄 수 있습니다.",
+    "shortDescription": "글쓰기 전문가를 위한 방해 없는 AI 편집기",
+    "category": "writing",
+    "url": "https://lex.page",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["방해 없는 인터페이스", "AI 기반 편집기", "문장 재작성", "진부한 표현 감지", "간결성 제안"],
+    "tags": ["편집기", "전문적인 글쓰기", "미니멀리스트", "재작성"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

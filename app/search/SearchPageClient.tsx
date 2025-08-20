@@ -26,6 +26,8 @@ export default function SearchPageClient() {
   const {
     query,
     setQuery,
+    searchQuery,
+    handleSearch,
     filters,
     updateFilters,
     clearFilters,
@@ -34,7 +36,7 @@ export default function SearchPageClient() {
     categories
   } = useSearch({ initialQuery, initialFilters });
 
-  const hasSearchQuery = query.trim().length > 0;
+  const hasSearchQuery = searchQuery.trim().length > 0;
   const hasResults = searchResults.tools.length > 0;
   const showResults = hasSearchQuery || hasActiveFilters;
 
@@ -45,6 +47,8 @@ export default function SearchPageClient() {
         <SearchHeader 
           query={query}
           setQuery={setQuery}
+          searchQuery={searchQuery}
+          onSearch={handleSearch}
           totalResults={searchResults.totalCount}
           hasActiveFilters={hasActiveFilters}
           onClearFilters={clearFilters}
@@ -68,7 +72,7 @@ export default function SearchPageClient() {
                 <SearchResults tools={searchResults.tools} />
               ) : (
                 <SearchEmpty 
-                  query={query} 
+                  query={searchQuery} 
                   hasFilters={hasActiveFilters}
                   onClearFilters={clearFilters}
                 />

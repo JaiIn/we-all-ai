@@ -87,11 +87,11 @@ export default function Header() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="AI 도구를 검색해보세요..."
-                className="w-full px-8 py-4 text-base border border-gray-200 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-700/50 dark:text-white backdrop-blur-sm"
+                className="w-full px-8 py-4 text-base border-2 border-blue-500 dark:border-blue-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-700/50 dark:text-white backdrop-blur-sm"
               />
               <button 
                 type="submit"
-                className="absolute right-2 top-1.5 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
               >
                 검색
               </button>
@@ -146,11 +146,11 @@ export default function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="AI 도구를 검색해보세요..."
-                  className="w-full px-4 py-3 text-sm border border-gray-200 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-700/50 dark:text-white"
+                  className="w-full px-4 py-3 text-sm border-2 border-blue-500 dark:border-blue-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-700/50 dark:text-white"
                 />
                 <button 
                   type="submit"
-                  className="absolute right-2 top-1 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs rounded-full"
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs rounded-full"
                 >
                   검색
                 </button>

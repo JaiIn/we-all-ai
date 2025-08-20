@@ -70,5 +70,77 @@
     "isPopular": false,
     "isFeatured": true,
     "lastUpdated": "2024-01-11"
+  },
+  {
+    "id": "microsoft-copilot-search",
+    "name": "Microsoft Copilot (Search)",
+    "description": "Bing 검색 엔진 및 Microsoft 365 생태계에 통합된 Copilot은 OpenAI의 GPT-4 모델을 사용하여 대화형 검색 결과를 제공합니다. Word, Excel, Teams와 같은 Microsoft 제품 사용자에게 특히 유용합니다.",
+    "shortDescription": "Bing 검색 및 Microsoft 365에 통합된 AI 비서",
+    "category": "search",
+    "url": "https://copilot.microsoft.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["대화형 검색", "GPT-4 기반", "Microsoft 365 통합", "이미지 생성 기능", "다국어 지원"],
+    "tags": ["검색-엔진", "Microsoft", "Bing", "GPT-4"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "brave-search",
+    "name": "Brave Search",
+    "description": "개인 정보 보호에 중점을 둔 것으로 알려진 Brave Search는 사용자를 추적하거나 개인 데이터를 수집하지 않고 AI 기반 검색 경험을 제공합니다.",
+    "shortDescription": "개인 정보 보호에 중점을 둔 AI 검색 엔진",
+    "category": "search",
+    "url": "https://search.brave.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["개인 정보 보호 중심", "추적 없음", "독립적인 검색 인덱스", "AI 기반 요약", "광고 없음"],
+    "tags": ["개인-정보-보호", "검색-엔진", "추적-방지", "독립-인덱스"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "komo-ai",
+    "name": "Komo AI",
+    "description": "매우 타겟팅된 검색 결과가 필요한 사용자를 위해 설계되었으며, 특정 요구에 맞게 AI 응답을 조정하는 '페르소나' 및 검색 결과를 시각화하는 '마인드 맵'과 같은 고유한 기능을 제공합니다.",
+    "shortDescription": "페르소나 및 마인드 맵 기능이 있는 타겟 검색",
+    "category": "search",
+    "url": "https://komo.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["타겟 검색", "페르소나 기능", "마인드 맵 시각화", "대화형 인터페이스", "빠른 응답"],
+    "tags": ["타겟-검색", "페르소나", "마인드-맵", "시각화"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "arc-search",
+    "name": "Arc Search",
+    "description": "이 모바일 우선 도구는 브라우저, 검색 엔진 및 AI를 단일 경험으로 결합합니다. 'Browse for Me' 기능은 여러 소스에서 정보를 수집하는 프로세스를 자동화하고 요약된 결과로 새 웹 페이지를 만듭니다.",
+    "shortDescription": "'Browse for Me' 기능이 있는 모바일 우선 AI 검색",
+    "category": "search",
+    "url": "https://arc.net/search",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["모바일 우선", "Browse for Me 기능", "자동 요약", "브라우저-검색 통합", "개인 정보 보호"],
+    "tags": ["모바일-검색", "자동-요약", "브라우저-통합", "AI-에이전트"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

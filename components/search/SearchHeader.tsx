@@ -3,6 +3,8 @@ import Link from 'next/link';
 interface SearchHeaderProps {
   query: string;
   setQuery: (query: string) => void;
+  searchQuery: string;
+  onSearch: (query: string) => void;
   totalResults: number;
   hasActiveFilters: boolean;
   onClearFilters: () => void;
@@ -11,10 +13,23 @@ interface SearchHeaderProps {
 export default function SearchHeader({
   query,
   setQuery,
+  searchQuery,
+  onSearch,
   totalResults,
   hasActiveFilters,
   onClearFilters
 }: SearchHeaderProps) {
+  const handleSearch = () => {
+    if (query.trim()) {
+      onSearch(query);
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
   return (
     <div className="mb-8">
       {/* 브레드크럼 */}
@@ -31,10 +46,10 @@ export default function SearchHeader({
       {/* 검색 제목 */}
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          {query ? (
+          {searchQuery ? (
             <>
               &apos;<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {query}
+                {searchQuery}
               </span>&apos; 검색 결과
             </>
           ) : (
@@ -45,7 +60,7 @@ export default function SearchHeader({
         </h1>
         
         {/* 결과 수 표시 */}
-        {(query || hasActiveFilters) && (
+        {(searchQuery || hasActiveFilters) && (
           <div className="flex items-center justify-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
             <span>
               총 <span className="font-semibold text-gray-900 dark:text-white">{totalResults}</span>개의 AI 도구를 찾았습니다
@@ -70,14 +85,18 @@ export default function SearchHeader({
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyPress={handleKeyPress}
             placeholder="AI 도구를 검색해보세요... (예: ChatGPT, 이미지 생성, 코딩)"
-            className="w-full px-8 py-6 text-lg border border-gray-200 dark:border-gray-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-lg"
+            className="w-full px-8 py-6 pr-16 text-lg border-2 border-blue-500 dark:border-blue-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-lg"
           />
-          <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
-            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button
+            onClick={handleSearch}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 text-gray-400 hover:text-blue-600 transition-colors"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </div>

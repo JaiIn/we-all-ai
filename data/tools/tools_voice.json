@@ -142,5 +142,77 @@
     "isPopular": false,
     "isFeatured": false,
     "lastUpdated": "2024-01-07"
+  },
+  {
+    "id": "lovo-ai",
+    "name": "Lovo AI",
+    "description": "500개 이상의 음성과 100개 언어를 지원하는 수상 경력에 빛나는 AI 음성 생성기입니다. Lovo의 플랫폼인 Genny는 스크립트 작성, 음성 생성, 비디오 편집 기능을 포함하는 올인원 도구입니다.",
+    "shortDescription": "500개 이상의 음성을 제공하는 올인원 AI 음성 생성기",
+    "category": "voice",
+    "url": "https://lovo.ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 24,
+      "currency": "USD"
+    },
+    "features": ["500개 이상의 AI 음성", "100개 이상의 언어", "올인원 플랫폼 (Genny)", "비디오 편집 기능", "음성 복제"],
+    "tags": ["음성-생성기", "비디오-편집", "다국어", "음성-복제"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "play-ht",
+    "name": "Play.ht",
+    "description": "140개 이상의 언어와 억양으로 800개 이상의 방대한 음성 라이브러리를 갖춘 다목적 플랫폼입니다. 팟캐스트, 오디오북, e-러닝 등 다양한 용도에 적합합니다.",
+    "shortDescription": "800개 이상의 음성을 제공하는 다목적 AI 음성 플랫폼",
+    "category": "voice",
+    "url": "https://play.ht",
+    "pricing": {
+      "free": true,
+      "startingPrice": 31.20,
+      "currency": "USD"
+    },
+    "features": ["800개 이상의 AI 음성", "140개 이상의 언어 및 억양", "팟캐스트 제작", "오디오북 제작", "e-러닝 보이스오버"],
+    "tags": ["팟캐스팅", "오디오북", "e-러닝", "다국어"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "listnr",
+    "name": "Listnr",
+    "description": "142개 이상의 언어로 1,000개 이상의 다양한 음성을 제공하며 텍스트-비디오 변환 도구와 음성 복제 기능을 포함합니다.",
+    "shortDescription": "1000개 이상의 음성과 텍스트-비디오 변환 기능을 갖춘 AI 음성 생성기",
+    "category": "voice",
+    "url": "https://www.listnr.tech",
+    "pricing": {
+      "free": true,
+      "startingPrice": 9,
+      "currency": "USD"
+    },
+    "features": ["1000개 이상의 AI 음성", "142개 이상의 언어", "텍스트-비디오 변환 도구", "음성 복제", "임베드 가능한 오디오 플레이어"],
+    "tags": ["텍스트-비디오", "음성-복제", "다국어", "임베드-플레이어"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "ttsmaker",
+    "name": "TTSMaker",
+    "description": "다양한 언어와 음성을 지원하는 완전 무료 온라인 텍스트-음성 변환 도구입니다. 사용이 간편하고 무제한 사용을 제공합니다.",
+    "shortDescription": "무제한 사용이 가능한 무료 온라인 텍스트-음성 변환",
+    "category": "voice",
+    "url": "https://ttsmaker.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["완전 무료", "무제한 사용", "다양한 언어 및 음성", "가입 필요 없음", "오디오 파일 다운로드"],
+    "tags": ["무료", "tts", "온라인-도구", "무제한"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

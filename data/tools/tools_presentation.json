@@ -70,5 +70,77 @@
     "isPopular": true,
     "isFeatured": true,
     "lastUpdated": "2024-01-14"
+  },
+  {
+    "id": "plus-ai",
+    "name": "Plus AI",
+    "description": "Google Slides 및 PowerPoint와 통합되어 이미 사용 중인 소프트웨어 내에서 프레젠테이션을 생성하고 편집할 수 있는 도구입니다. 전체 프레젠테이션, 단일 슬라이드를 만들고 콘텐츠 재작성 및 재포맷팅을 지원합니다.",
+    "shortDescription": "Google Slides 및 PowerPoint에 통합된 AI 프레젠테이션 도우미",
+    "category": "presentation",
+    "url": "https://www.plusdocs.com/plus-ai-presentation-maker",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": ["Google Slides 통합", "PowerPoint 통합", "전체 프레젠테이션 생성", "콘텐츠 재작성 및 재포맷팅", "AI 기반 편집"],
+    "tags": ["google-slides", "powerpoint", "프레젠테이션-도우미", "통합"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "slidesgo",
+    "name": "Slidesgo",
+    "description": "텍스트 프롬프트에서 프레젠테이션을 생성할 수 있는 무료 AI 프레젠테이션 메이커를 제공하는 도구입니다. 다양한 템플릿을 제공하고 사용자 정의를 허용합니다.",
+    "shortDescription": "다양한 템플릿을 갖춘 무료 AI 프레젠테이션 메이커",
+    "category": "presentation",
+    "url": "https://slidesgo.com/ai-presentations",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["무료 AI 프레젠테이션 메이커", "텍스트 프롬프트 기반 생성", "다양한 템플릿", "사용자 정의 가능", "빠른 생성"],
+    "tags": ["무료", "프레젠테이션-메이커", "템플릿", "ai-생성"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "pitch",
+    "name": "Pitch",
+    "description": "비즈니스, 디자이너, 영업팀을 대상으로 AI의 도움을 받아 프레젠테이션을 신속하게 만들 수 있도록 지원합니다. 100개 이상의 전문적으로 디자인된 템플릿을 제공하며 Notion 및 Slack과 같은 다른 플랫폼과 통합됩니다.",
+    "shortDescription": "비즈니스 및 팀을 위한 AI 프레젠테이션 제작 도구",
+    "category": "presentation",
+    "url": "https://pitch.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 8,
+      "currency": "USD"
+    },
+    "features": ["전문 디자인 템플릿", "빠른 제작 속도", "팀 협업 기능", "Notion 및 Slack 통합", "AI 기반 콘텐츠 제안"],
+    "tags": ["비즈니스", "디자인-템플릿", "협업", "통합"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "prezi-ai",
+    "name": "Prezi AI",
+    "description": "독특한 확대/축소 사용자 인터페이스로 유명한 Prezi AI는 매력적이고 애니메이션이 적용된 프레젠테이션을 만들 수 있습니다.",
+    "shortDescription": "확대/축소 인터페이스를 갖춘 매력적인 AI 프레젠테이션",
+    "category": "presentation",
+    "url": "https://prezi.com/ai-presentations",
+    "pricing": {
+      "free": true,
+      "startingPrice": 7,
+      "currency": "USD"
+    },
+    "features": ["확대/축소 사용자 인터페이스 (ZUI)", "애니메이션 효과", "매력적인 시각적 스토리텔링", "AI 기반 디자인", "다양한 템플릿"],
+    "tags": ["애니메이션", "ZUI", "스토리텔링", "시각적-프레젠테이션"],
+    "isPopular": false,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
   }
 ]

@@ -70,5 +70,77 @@
     "isPopular": false,
     "isFeatured": false,
     "lastUpdated": "2024-01-12"
+  },
+  {
+    "id": "tableau",
+    "name": "Tableau",
+    "description": "AI 기능이 통합된 널리 사용되는 데이터 시각화 도구입니다. AI를 활용하여 분석가가 자연어 처리를 사용하여 데이터와 상호 작용하고 내장된 대시보드 및 보고서에서 데이터를 자동으로 표시하고 시각화하도록 돕습니다.",
+    "shortDescription": "AI 기능이 통합된 선도적인 데이터 시각화 도구",
+    "category": "data",
+    "url": "https://www.tableau.com",
+    "pricing": {
+      "free": false,
+      "startingPrice": 70,
+      "currency": "USD"
+    },
+    "features": ["AI 기반 데이터 시각화", "자연어 처리 (Ask Data)", "자동 데이터 검색 (Explain Data)", "Tableau GPT", "Tableau Pulse"],
+    "tags": ["데이터-시각화", "BI", "자연어-처리", "대시보드"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "microsoft-power-bi",
+    "name": "Microsoft Power BI",
+    "description": "사용자가 데이터를 정렬하고 시각화하여 통찰력을 찾을 수 있는 비즈니스 인텔리전스 플랫폼입니다. Microsoft 생태계와 통합되며 자동화된 기계 학습 모델 생성 및 자연어 처리 사용과 같은 AI 기반 기능을 제공합니다.",
+    "shortDescription": "AI 기능이 포함된 Microsoft의 비즈니스 인텔리전스 플랫폼",
+    "category": "data",
+    "url": "https://powerbi.microsoft.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": ["대화형 대시보드", "AI 기반 통찰력", "자연어 쿼리", "자동화된 기계 학습", "Microsoft 365 통합"],
+    "tags": ["BI", "데이터-시각화", "Microsoft", "기계-학습"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "zoho-analytics",
+    "name": "Zoho Analytics",
+    "description": "Zia라는 AI 어시스턴트를 사용하여 데이터를 통찰력으로 전환하는 비즈니스 인텔리전스 플랫폼입니다. 500개 이상의 데이터 소스에 연결할 수 있으며 여러 데이터 소스를 통합해야 하는 비즈니스에 적합합니다.",
+    "shortDescription": "AI 어시스턴트 Zia를 통한 BI 및 분석",
+    "category": "data",
+    "url": "https://www.zoho.com/analytics/",
+    "pricing": {
+      "free": true,
+      "startingPrice": 24,
+      "currency": "USD"
+    },
+    "features": ["AI 어시스턴트 (Zia)", "500개 이상의 데이터 소스 연결", "대시보드 및 보고서", "예측 분석", "데이터 준비 및 관리"],
+    "tags": ["BI", "AI-어시스턴트", "데이터-통합", "Zoho"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "thoughtspot",
+    "name": "ThoughtSpot",
+    "description": "AI와 검색 기반 인터페이스를 결합하여 사용자가 자연어로 질문하고 즉각적인 시각화된 답변을 받을 수 있도록 합니다.",
+    "shortDescription": "검색 및 AI 기반 분석 플랫폼",
+    "category": "data",
+    "url": "https://www.thoughtspot.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 95,
+      "currency": "USD"
+    },
+    "features": ["검색 기반 분석", "자연어 쿼리", "라이브 분석", "자동화된 통찰력", "대시보드 생성"],
+    "tags": ["검색-기반", "BI", "자연어-쿼리", "라이브-분석"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

@@ -25,7 +25,7 @@ export default function SearchSection() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="찾고 있는 AI 도구를 검색해보세요... (예: ChatGPT, 이미지 생성, 코딩 도구)"
-            className="w-full px-8 py-6 text-lg border-2 border-gray-200 dark:border-gray-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-xl"
+            className="w-full px-8 py-6 text-lg border-2 border-blue-500 dark:border-blue-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-xl"
           />
           <button 
             type="submit"

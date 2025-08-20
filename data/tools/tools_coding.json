@@ -142,5 +142,77 @@
     "isPopular": false,
     "isFeatured": true,
     "lastUpdated": "2024-01-10"
+  },
+  {
+    "id": "amazon-q-developer",
+    "name": "Amazon Q Developer",
+    "description": "Amazon의 AI 어시스턴트로, AWS 생태계에서 작업하는 개발자에게 특히 유용하며, 널리 사용되는 IDE 및 명령줄과 통합됩니다.",
+    "shortDescription": "AWS 개발자를 위한 Amazon의 AI 어시스턴트",
+    "category": "coding",
+    "url": "https://aws.amazon.com/q/developer/",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["IDE 통합", "명령줄 인터페이스", "AWS 생태계 통합", "코드 제안", "보안 스캔"],
+    "tags": ["aws", "클라우드", "ai-assistant", "ide", "보안"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "jetbrains-ai-assistant",
+    "name": "JetBrains AI Assistant",
+    "description": "IntelliJ IDEA 및 PyCharm과 같은 JetBrains IDE에 직접 통합된 이 어시스턴트는 JetBrains 생태계와의 깊은 통합을 제공하여 컨텍스트 인식 스마트 완성, 코드 생성 등을 제공합니다.",
+    "shortDescription": "JetBrains IDE를 위한 AI 어시스턴트",
+    "category": "coding",
+    "url": "https://www.jetbrains.com/ai-assistant/",
+    "pricing": {
+      "free": false,
+      "startingPrice": 10,
+      "currency": "USD"
+    },
+    "features": ["깊은 IDE 통합", "컨텍스트 인식 코드 완성", "코드 생성", "리팩토링", "내장 채팅"],
+    "tags": ["jetbrains", "ide", "intellij", "pycharm", "리팩토링"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "sourcegraph-cody",
+    "name": "Sourcegraph Cody",
+    "description": "Cody는 편집기 내에서 코드를 찾고, 설명하고, 작성하는 AI 코딩 어시스턴트입니다. Sourcegraph의 코드 그래프를 사용하여 전체 코드베이스에서 컨텍스트를 제공합니다.",
+    "shortDescription": "전체 코드베이스 컨텍스트를 갖춘 AI 코딩 어시스턴트",
+    "category": "coding",
+    "url": "https://sourcegraph.com/cody",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": ["코드베이스 인식 컨텍스트", "코드 설명", "코드 생성", "IDE 통합", "코드 검색"],
+    "tags": ["코드-검색", "코드-그래프", "ai-assistant", "컨텍스트-인식"],
+    "isPopular": false,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "replit-ai",
+    "name": "Replit AI",
+    "description": "코드를 자동 완성하고, 버그를 찾고, 수정을 제안할 수 있는 브라우저 기반 AI 코드 어시스턴트입니다. Replit 온라인 IDE의 일부로, 클라우드에서 원활한 코딩 경험을 제공합니다.",
+    "shortDescription": "온라인 IDE의 브라우저 기반 AI 코드 어시스턴트",
+    "category": "coding",
+    "url": "https://replit.com/ai",
+    "pricing": {
+      "free": true,
+      "startingPrice": 20,
+      "currency": "USD"
+    },
+    "features": ["브라우저 기반 IDE", "실시간 코드 지원", "버그 감지", "코드 설명", "협업 코딩"],
+    "tags": ["온라인-ide", "브라우저-기반", "협업", "ai-assistant"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
   }
 ]

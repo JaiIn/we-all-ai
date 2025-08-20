@@ -142,5 +142,77 @@
     "isPopular": true,
     "isFeatured": false,
     "lastUpdated": "2024-01-11"
+  },
+  {
+    "id": "luminar-neo",
+    "name": "Luminar Neo",
+    "description": "복잡한 편집 작업을 단순화하도록 설계된 AI 기반 사진 편집기입니다. 하늘 교체, 인물 리터칭 및 기타 분위기 효과와 같은 기능을 제공합니다.",
+    "shortDescription": "복잡한 작업을 단순화하는 AI 사진 편집기",
+    "category": "image",
+    "url": "https://skylum.com/luminar",
+    "pricing": {
+      "free": false,
+      "startingPrice": 9.95,
+      "currency": "USD"
+    },
+    "features": ["AI 하늘 교체", "AI 인물 리터칭", "분위기 효과", "전력선 제거", "먼지 제거"],
+    "tags": ["사진-편집", "ai-편집기", "리터칭", "하늘-교체"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "pixlr",
+    "name": "Pixlr",
+    "description": "배경 제거, 개체 제거 및 생성 채우기를 포함한 다양한 AI 기반 도구를 제공하는 온라인 사진 편집기입니다.",
+    "shortDescription": "AI 기반 도구를 갖춘 온라인 사진 편집기",
+    "category": "image",
+    "url": "https://pixlr.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 0.75,
+      "currency": "USD"
+    },
+    "features": ["온라인 편집기", "AI 배경 제거", "AI 개체 제거", "생성 채우기", "템플릿 및 콜라주"],
+    "tags": ["온라인-편집기", "무료", "배경-제거", "생성-채우기"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "fotor",
+    "name": "Fotor",
+    "description": "업스케일러, 매직 지우개 및 배경 제거기와 같은 AI 기능을 갖춘 인기 있고 신뢰할 수 있는 사진 편집 제품군입니다.",
+    "shortDescription": "AI 기능을 갖춘 신뢰할 수 있는 사진 편집 제품군",
+    "category": "image",
+    "url": "https://www.fotor.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 3.33,
+      "currency": "USD"
+    },
+    "features": ["AI 업스케일러", "매직 지우개", "배경 제거기", "사진 향상", "디자인 템플릿"],
+    "tags": ["사진-편집", "업스케일러", "매직-지우개", "무료"],
+    "isPopular": true,
+    "isFeatured": false,
+    "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "playground-ai",
+    "name": "Playground AI",
+    "description": "AI 아트를 만들고 공유할 수 있는 무료 온라인 AI 이미지 생성기입니다. 자신의 이미지를 텍스트 프롬프트와 결합하여 독특한 결과를 만듭니다.",
+    "shortDescription": "무료 온라인 AI 이미지 생성기 및 아트 공유 플랫폼",
+    "category": "image",
+    "url": "https://playground.com",
+    "pricing": {
+      "free": true,
+      "startingPrice": 12,
+      "currency": "USD"
+    },
+    "features": ["무료 이미지 생성", "이미지 대 이미지 생성", "커뮤니티 피드", "다중 AI 모델", "편집용 캔버스"],
+    "tags": ["무료", "이미지-생성", "커뮤니티", "아트"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-19"
   }
 ]
