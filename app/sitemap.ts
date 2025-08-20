@@ -1,4 +1,4 @@
-import { getCategories, getAllTools } from '@/lib/data'
+import { getCategories } from '@/lib/data'
 
 export default function sitemap() {
   const categories = getCategories();

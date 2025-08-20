@@ -1,10 +1,9 @@
 'use client';
 
 import Script from 'next/script';
-import { getSiteStats, getCategories } from '@/lib/data';
+import { getCategories } from '@/lib/data';
 
 export default function StructuredData() {
-  const stats = getSiteStats();
   const categories = getCategories();
 
   const structuredData = {

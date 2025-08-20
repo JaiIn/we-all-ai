@@ -2,6 +2,13 @@
 
 import { useReportWebVitals } from 'next/web-vitals';
 
+// Google Analytics gtag 타입 확장
+declare global {
+  interface Window {
+    gtag?: (command: string, eventName: string, parameters?: Record<string, unknown>) => void;
+  }
+}
+
 export function WebVitals() {
   useReportWebVitals((metric) => {
     // 개발 환경에서만 콘솔에 출력

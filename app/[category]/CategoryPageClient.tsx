@@ -59,7 +59,7 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
         </div>
 
         {/* 카테고리 네비게이션 */}
-        <CategoryNavigation currentCategory={category} />
+        <CategoryNavigation />
       </div>
     </AnimatedBackground>
   );
