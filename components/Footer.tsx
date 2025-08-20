@@ -65,11 +65,6 @@ export default function Footer() {
                   모든 카테고리
                 </Link>
               </li>
-              <li>
-                <a href="https://github.com/JaiIn/we-all-ai" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  GitHub
-                </a>
-              </li>
             </ul>
           </div>
         </div>

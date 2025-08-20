@@ -37,16 +37,6 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
                   무료
                 </span>
               )}
-              {tool.isPopular && (
-                <span className="inline-block px-3 py-1 text-xs font-medium bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full">
-                  인기
-                </span>
-              )}
-              {tool.isFeatured && (
-                <span className="inline-block px-3 py-1 text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full">
-                  추천
-                </span>
-              )}
             </div>
           </div>
         </div>

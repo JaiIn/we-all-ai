@@ -40,8 +40,6 @@ export interface AiTool {
   screenshots?: string[];
   rating?: number;
   reviewCount?: number;
-  isPopular?: boolean;
-  isFeatured?: boolean;
   lastUpdated?: string;
 }
 

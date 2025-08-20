@@ -5,8 +5,6 @@ import { getAllTools, getCategories } from '@/lib/data';
 export interface SearchFilters {
   category?: string;
   pricing?: 'free' | 'paid' | 'all';
-  isPopular?: boolean;
-  isFeatured?: boolean;
 }
 
 export interface SearchResult {
@@ -72,16 +70,6 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
       filteredTools = filteredTools.filter(tool => !tool.pricing.free);
     }
 
-    // 인기 도구 필터
-    if (filters.isPopular) {
-      filteredTools = filteredTools.filter(tool => tool.isPopular);
-    }
-
-    // 추천 도구 필터
-    if (filters.isFeatured) {
-      filteredTools = filteredTools.filter(tool => tool.isFeatured);
-    }
-
     // 관련성에 따른 정렬
     if (searchQuery.trim()) {
       filteredTools = filteredTools.sort((a, b) => {
@@ -101,9 +89,7 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
   function hasActiveFilters(): boolean {
     return !!(
       (filters.category && filters.category !== 'all') ||
-      (filters.pricing && filters.pricing !== 'all') ||
-      filters.isPopular ||
-      filters.isFeatured
+      (filters.pricing && filters.pricing !== 'all')
     );
   }
 
@@ -125,9 +111,9 @@ export function useSearch({ initialQuery = '', initialFilters = {} }: UseSearchP
       score += 8;
     }
 
-    // 인기도 보너스
-    if (tool.isPopular) score += 1;
-    if (tool.isFeatured) score += 1;
+    // 인기도 보너스 제거
+    // if (tool.isPopular) score += 1;
+    // if (tool.isFeatured) score += 1;
 
     return score;
   }

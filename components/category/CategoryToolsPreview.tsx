@@ -33,11 +33,6 @@ export default function CategoryToolsPreview({ tools }: CategoryToolsPreviewProp
                   무료
                 </span>
               )}
-              {tool.isPopular && (
-                <span className="inline-block px-2 py-1 text-xs font-medium bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full">
-                  인기
-                </span>
-              )}
             </div>
           </div>
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">

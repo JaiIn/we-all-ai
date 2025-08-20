@@ -73,29 +73,23 @@ export function getToolsByCategory(categoryId: string): AiTool[] {
   }
 }
 
-// 인기 도구들 가져오기
+// 계산된 인기 도구들 가져오기 (가나다순)
 export function getPopularTools(limit: number = 6): AiTool[] {
   const tools = getAllTools();
   return tools
-    .filter(tool => tool.isPopular)
-    .sort((a, b) => {
-      // rating이 없는 경우 기본값 4.0 사용
-      const ratingA = a.rating || 4.0;
-      const ratingB = b.rating || 4.0;
-      return ratingB - ratingA;
-    })
+    .sort((a, b) => a.name.localeCompare(b.name))
     .slice(0, limit);
 }
 
-// 추천 도구들 가져오기
+// 최근 도구들 가져오기 (추천 대신 최근 업데이트 기준)
 export function getFeaturedTools(limit: number = 4): AiTool[] {
   const tools = getAllTools();
   return tools
-    .filter(tool => tool.isFeatured)
+    .filter(tool => tool.lastUpdated)
     .sort((a, b) => {
-      const ratingA = a.rating || 4.0;
-      const ratingB = b.rating || 4.0;
-      return ratingB - ratingA;
+      const dateA = new Date(a.lastUpdated!);
+      const dateB = new Date(b.lastUpdated!);
+      return dateB.getTime() - dateA.getTime();
     })
     .slice(0, limit);
 }

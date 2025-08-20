@@ -71,38 +71,6 @@ export default function SearchFilters({
           </div>
         </div>
 
-        {/* 특성 필터 */}
-        <div>
-          <label className="block text-sm font-medium text-gray-900 dark:text-white mb-3">
-            특성
-          </label>
-          <div className="space-y-3">
-            <label className="flex items-center">
-              <input
-                type="checkbox"
-                checked={filters.isPopular || false}
-                onChange={(e) => updateFilters({ isPopular: e.target.checked || undefined })}
-                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-              />
-              <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">
-                인기 도구
-              </span>
-            </label>
-            
-            <label className="flex items-center">
-              <input
-                type="checkbox"
-                checked={filters.isFeatured || false}
-                onChange={(e) => updateFilters({ isFeatured: e.target.checked || undefined })}
-                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-              />
-              <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">
-                추천 도구
-              </span>
-            </label>
-          </div>
-        </div>
-
         {/* 결과 수 표시 */}
         <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
           <div className="text-sm text-gray-600 dark:text-gray-400 text-center">
