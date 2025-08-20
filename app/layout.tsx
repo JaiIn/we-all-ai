@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     canonical: "https://we-all-ai.vercel.app",
   },
   verification: {
-    google: "", // 나중에 Google Search Console 등록 후 추가
+    google: "UEDWsJYzm35NVCa-FNU0HqrKTmgZQLXoqczYFSf-40M", // Google Search Console verification
   },
 };
 
