@@ -232,5 +232,29 @@
     "isPopular": true,
     "isFeatured": true,
     "lastUpdated": "2025-08-19"
+  },
+  {
+    "id": "google-veo",
+    "name": "Google Veo",
+    "description": "Google DeepMind에서 개발한 차세대 비디오 생성 AI 모델입니다. 텍스트 프롬프트로부터 1080p 해상도의 60초 이상 비디오를 생성할 수 있으며, 시네마틱한 효과와 다양한 시각적 스타일을 지원합니다. 영화 제작자와 크리에이터를 위한 전문적인 비디오 생성 도구입니다.",
+    "shortDescription": "Google의 전문적인 AI 비디오 생성 모델, 1080p 고품질 영상 제작",
+    "category": "video",
+    "url": "https://deepmind.google/technologies/veo/",
+    "pricing": {
+      "free": false,
+      "startingPrice": 0,
+      "currency": "USD"
+    },
+    "features": [
+      "1080p 고해상도 비디오",
+      "60초 이상 긴 영상",
+      "시네마틱 효과",
+      "다양한 시각적 스타일",
+      "전문적인 영상 품질"
+    ],
+    "tags": ["Google", "DeepMind", "고해상도", "시네마틱"],
+    "isPopular": true,
+    "isFeatured": true,
+    "lastUpdated": "2025-08-20"
   }
 ]
