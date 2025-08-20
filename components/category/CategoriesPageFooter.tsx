@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function CategoriesPageFooter() {
   return (
     <div className="text-center mt-16">
-      <p className="text-gray-600 dark:text-gray-400 mb-6">
+      <p className="text-gray-600 mb-6">
         더 많은 AI 도구를 찾고 계신가요?
       </p>
       <Link

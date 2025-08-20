@@ -63,7 +63,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm border-b border-gray-200/50 dark:border-gray-700/50 transition-transform duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200/50 transition-transform duration-300 ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +73,7 @@ export default function Header() {
             <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
               <span className="text-white font-bold text-xl">W</span>
             </div>
-            <span className="text-2xl font-bold text-gray-900 dark:text-white">
+            <span className="text-2xl font-bold text-gray-900">
               We All AI
             </span>
           </Link>
@@ -87,7 +87,7 @@ export default function Header() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="AI 도구를 검색해보세요..."
-                className="w-full px-8 py-4 text-base border-2 border-blue-500 dark:border-blue-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-700/50 dark:text-white backdrop-blur-sm"
+                className="w-full px-8 py-4 text-base border-2 border-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 backdrop-blur-sm"
               />
               <button 
                 type="submit"
@@ -101,29 +101,29 @@ export default function Header() {
           {/* 네비게이션 - 데스크톱 */}
           <nav className="hidden md:flex items-center space-x-8 flex-shrink-0">
             <Link 
-              href="/" 
-              className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+            href="/" 
+            className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              홈
+            홈
             </Link>
             <Link 
-              href="/categories" 
-              className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+            href="/categories" 
+            className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              카테고리
+            카테고리
             </Link>
             <Link 
-              href="/search" 
-              className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+            href="/search" 
+            className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              검색
+            검색
             </Link>
           </nav>
 
           {/* 모바일 메뉴 버튼 */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -137,7 +137,7 @@ export default function Header() {
 
         {/* 모바일 메뉴 */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200/50 dark:border-gray-700/50">
+          <div className="md:hidden py-4 border-t border-gray-200/50">
             {/* 모바일 검색창 */}
             <div className="mb-4">
               <form onSubmit={handleSearch} className="relative">
@@ -146,7 +146,7 @@ export default function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="AI 도구를 검색해보세요..."
-                  className="w-full px-4 py-3 text-sm border-2 border-blue-500 dark:border-blue-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-700/50 dark:text-white"
+                  className="w-full px-4 py-3 text-sm border-2 border-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600"
                 />
                 <button 
                   type="submit"
@@ -161,21 +161,21 @@ export default function Header() {
             <div className="flex flex-col space-y-4">
               <Link 
                 href="/" 
-                className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 홈
               </Link>
               <Link 
                 href="/categories" 
-                className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 카테고리
               </Link>
               <Link 
                 href="/search" 
-                className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 검색

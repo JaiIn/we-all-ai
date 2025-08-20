@@ -84,10 +84,10 @@ export default function SearchPageClient() {
                     <svg className="w-20 h-20 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-2">
                       AI 도구를 검색해보세요
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <p className="text-gray-600">
                       원하는 AI 도구를 찾기 위해 검색어를 입력하거나 필터를 사용해보세요.
                     </p>
                   </div>

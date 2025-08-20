@@ -25,7 +25,7 @@ export default function SearchSection() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="찾고 있는 AI 도구를 검색해보세요... (예: ChatGPT, 이미지 생성, 코딩 도구)"
-            className="w-full px-8 py-6 text-lg border-2 border-blue-500 dark:border-blue-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-xl"
+            className="w-full px-8 py-6 text-lg border-2 border-blue-500 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 backdrop-blur-sm shadow-xl"
           />
           <button 
             type="submit"
@@ -39,7 +39,7 @@ export default function SearchSection() {
       {/* 고급 검색 링크 */}
       <Link
         href="/search"
-        className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
+        className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
       >
         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

@@ -58,14 +58,14 @@ export default function Home() {
           isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
               Find the Perfect{" "}
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                 AI Tool
               </span>{" "}
               <br />for Your Needs
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed">
               다양한 분야의 AI 도구들을 한 곳에서 쉽게 찾고 비교해보세요.
               <br className="hidden md:block" /> 
               코딩부터 창작까지, 당신이 필요한 AI 도구가 여기 있습니다.
@@ -88,7 +88,7 @@ export default function Home() {
           isVisible.stats ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
         }`}>
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16">
               원하는걸 얻을 수 있는
               <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
                  AI 도구 플랫폼
@@ -97,21 +97,21 @@ export default function Home() {
             
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50">
                   <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">{stats.totalTools}+</div>
-                  <div className="text-gray-600 dark:text-gray-400 text-lg">AI 도구</div>
+                  <div className="text-gray-600 text-lg">AI 도구</div>
                 </div>
               </div>
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50">
                   <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">{stats.totalCategories}</div>
-                  <div className="text-gray-600 dark:text-gray-400 text-lg">카테고리</div>
+                  <div className="text-gray-600 text-lg">카테고리</div>
                 </div>
               </div>
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50">
                   <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">{stats.freeToolsCount}</div>
-                  <div className="text-gray-600 dark:text-gray-400 text-lg">무료 도구</div>
+                  <div className="text-gray-600 text-lg">무료 도구</div>
                 </div>
               </div>
               {/* <div className="text-center transform hover:scale-105 transition-transform duration-300">
@@ -135,7 +135,7 @@ export default function Home() {
         <section className={`py-20 transition-all duration-1000 delay-600 ${
           isVisible.categories ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
         }`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">
             카테고리별 
             <span className="bg-gradient-to-r from-pink-600 to-violet-600 bg-clip-text text-transparent">
               AI 도구 탐색
@@ -148,7 +148,7 @@ export default function Home() {
               return (
                 <div 
                   key={category.id} 
-                  className={`group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-xl transition-all duration-500 hover:scale-105 ${
+                  className={`group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 overflow-hidden hover:shadow-xl transition-all duration-500 hover:scale-105 ${
                     isVisible.categories 
                       ? 'opacity-100 translate-y-0' 
                       : 'opacity-0 translate-y-10'
@@ -167,10 +167,10 @@ export default function Home() {
                         <CategoryIcon categoryId={category.id} />
                       </div>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       {category.name}
                     </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-sm text-gray-600">
                       {category.description}
                     </p>
                   </div>

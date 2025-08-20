@@ -68,7 +68,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-gray-900`}>
+      <body className={`${inter.variable} font-sans antialiased bg-gray-50`}>
         <WebVitals />
         <div className="min-h-screen flex flex-col">
           <Header />

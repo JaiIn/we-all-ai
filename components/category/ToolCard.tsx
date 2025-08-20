@@ -9,7 +9,7 @@ interface ToolCardProps {
 export default function ToolCard({ tool, index }: ToolCardProps) {
   return (
     <div
-      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
+      className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
       style={{ 
         animationDelay: `${index * 100}ms`,
         animation: 'fadeInUp 0.6s ease-out forwards'
@@ -25,7 +25,7 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
               rel="noopener noreferrer"
               className="block group"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors mb-2">
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                 {tool.name}
               </h3>
             </Link>
@@ -33,7 +33,7 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
             {/* 태그들 */}
             <div className="flex flex-wrap gap-2 mb-3">
               {tool.pricing.free && (
-                <span className="inline-block px-3 py-1 text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full">
+                <span className="inline-block px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">
                   무료
                 </span>
               )}
@@ -42,17 +42,17 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
         </div>
 
         {/* 도구 설명 */}
-        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+        <p className="text-gray-600 mb-4 leading-relaxed">
           {tool.shortDescription}
         </p>
 
         {/* 주요 기능 */}
         {tool.features && tool.features.length > 0 && (
           <div className="mb-4">
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">
               주요 기능
             </h4>
-            <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+            <ul className="text-sm text-gray-600 space-y-1">
               {tool.features.slice(0, 3).map((feature, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
@@ -64,14 +64,14 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
         )}
 
         {/* 가격 정보 */}
-        <div className="flex items-center justify-between pt-4 border-t border-gray-200/50 dark:border-gray-700/50">
+        <div className="flex items-center justify-between pt-4 border-t border-gray-200/50">
           <div className="text-sm">
             {tool.pricing.free ? (
-              <span className="text-green-600 dark:text-green-400 font-medium">
+              <span className="text-green-600 font-medium">
                 무료 사용 가능
               </span>
             ) : (
-              <span className="text-gray-600 dark:text-gray-400">
+              <span className="text-gray-600">
                 ${tool.pricing.startingPrice}/월부터
               </span>
             )}

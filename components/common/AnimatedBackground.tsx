@@ -16,7 +16,7 @@ export default function AnimatedBackground({ children }: AnimatedBackgroundProps
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* 기본 그라데이션 배경 */}
-      <div className="fixed inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900 -z-20" />
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 -z-20" />
       
       {/* 유체 애니메이션 레이어 1 - 서버사이드에서도 안전 */}
       <div className="fixed inset-0 -z-10">
@@ -295,33 +295,6 @@ export default function AnimatedBackground({ children }: AnimatedBackgroundProps
           100% {
             transform: translateY(-100px) scale(1);
             opacity: 0;
-          }
-        }
-
-        /* 다크 모드에서의 추가 효과 */
-        @media (prefers-color-scheme: dark) {
-          .blob {
-            filter: blur(60px);
-          }
-          
-          .blob-1 {
-            background: linear-gradient(45deg, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.15));
-          }
-          
-          .blob-2 {
-            background: linear-gradient(45deg, rgba(147, 51, 234, 0.15), rgba(236, 72, 153, 0.15));
-          }
-          
-          .blob-3 {
-            background: linear-gradient(45deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.12));
-          }
-          
-          .blob-4 {
-            background: linear-gradient(45deg, rgba(34, 197, 94, 0.15), rgba(59, 130, 246, 0.15));
-          }
-          
-          .blob-5 {
-            background: linear-gradient(45deg, rgba(168, 85, 247, 0.12), rgba(34, 197, 94, 0.12));
           }
         }
 

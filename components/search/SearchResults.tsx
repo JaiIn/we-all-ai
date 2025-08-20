@@ -10,7 +10,7 @@ export default function SearchResults({ tools }: SearchResultsProps) {
     <div>
       {/* 검색 결과 제목 */}
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+        <h2 className="text-xl font-semibold text-gray-900">
           검색 결과
         </h2>
       </div>
@@ -35,7 +35,7 @@ export default function SearchResults({ tools }: SearchResultsProps) {
       {tools.length >= 20 && (
         <div className="flex justify-center mt-12">
           <div className="flex items-center space-x-2">
-            <button className="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+            <button className="px-4 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors">
               이전
             </button>
             <div className="flex space-x-1">
@@ -45,14 +45,14 @@ export default function SearchResults({ tools }: SearchResultsProps) {
                   className={`w-10 h-10 rounded-lg font-medium transition-colors ${
                     page === 1
                       ? 'bg-blue-600 text-white'
-                      : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                      : 'text-gray-600 hover:bg-gray-50'
                   }`}
                 >
                   {page}
                 </button>
               ))}
             </div>
-            <button className="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+            <button className="px-4 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors">
               다음
             </button>
           </div>

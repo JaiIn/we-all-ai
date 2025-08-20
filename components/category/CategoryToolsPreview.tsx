@@ -23,19 +23,19 @@ export default function CategoryToolsPreview({ tools }: CategoryToolsPreviewProp
               href={tool.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-gray-900 dark:text-white hover:text-blue-600 transition-colors cursor-pointer"
+              className="font-medium text-gray-900 hover:text-blue-600 transition-colors cursor-pointer"
             >
               {tool.name}
             </Link>
             <div className="flex items-center space-x-1">
               {tool.pricing.free && (
-                <span className="inline-block px-2 py-1 text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full">
+                <span className="inline-block px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">
                   무료
                 </span>
               )}
             </div>
           </div>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">
+          <p className="text-sm text-gray-600 mb-3 line-clamp-2">
             {tool.shortDescription}
           </p>
           <div className="text-xs text-gray-500">

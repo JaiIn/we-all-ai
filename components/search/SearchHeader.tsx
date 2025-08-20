@@ -33,19 +33,19 @@ export default function SearchHeader({
   return (
     <div className="mb-8">
       {/* 브레드크럼 */}
-      <nav className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 mb-6">
+      <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
         <Link href="/" className="hover:text-blue-600 transition-colors">
           홈
         </Link>
         <span>/</span>
-        <span className="text-gray-900 dark:text-white font-medium">
+        <span className="text-gray-900 font-medium">
           검색
         </span>
       </nav>
 
       {/* 검색 제목 */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           {searchQuery ? (
             <>
               &apos;<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -61,15 +61,15 @@ export default function SearchHeader({
         
         {/* 결과 수 표시 */}
         {(searchQuery || hasActiveFilters) && (
-          <div className="flex items-center justify-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
+          <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
             <span>
-              총 <span className="font-semibold text-gray-900 dark:text-white">{totalResults}</span>개의 AI 도구를 찾았습니다
+              총 <span className="font-semibold text-gray-900">{totalResults}</span>개의 AI 도구를 찾았습니다
             </span>
             
             {hasActiveFilters && (
               <button
                 onClick={onClearFilters}
-                className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
+                className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
               >
                 필터 초기화
               </button>
@@ -87,7 +87,7 @@ export default function SearchHeader({
             onChange={(e) => setQuery(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="AI 도구를 검색해보세요... (예: ChatGPT, 이미지 생성, 코딩)"
-            className="w-full px-8 py-6 pr-16 text-lg border-2 border-blue-500 dark:border-blue-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 dark:focus:border-blue-300 dark:bg-gray-800/50 dark:text-white backdrop-blur-sm shadow-lg"
+            className="w-full px-8 py-6 pr-16 text-lg border-2 border-blue-500 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 backdrop-blur-sm shadow-lg"
           />
           <button
             onClick={handleSearch}
