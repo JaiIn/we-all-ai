@@ -1,15 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function Header() {
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,24 +40,6 @@ export default function Header() {
     };
   }, [lastScrollY]);
 
-  const performSearch = () => {
-    if (searchQuery.trim()) {
-      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
-    }
-  };
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    performSearch();
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      // 폼 제출을 방지하기 위해 preventDefault 추가
-      e.preventDefault();
-      performSearch();
-    }
-  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200/50 transition-transform duration-300 ${
@@ -78,25 +57,6 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* 검색창 - 데스크톱 */}
-          <div className="hidden md:flex flex-1 max-w-2xl mx-8">
-            <form onSubmit={handleSearch} className="relative w-full">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="AI 도구를 검색해보세요..."
-                className="w-full px-8 py-4 text-base border-2 border-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600 backdrop-blur-sm"
-              />
-              <button 
-                type="submit"
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
-              >
-                검색
-              </button>
-            </form>
-          </div>
 
           {/* 네비게이션 - 데스크톱 */}
           <nav className="hidden md:flex items-center space-x-8 flex-shrink-0">
@@ -138,24 +98,6 @@ export default function Header() {
         {/* 모바일 메뉴 */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200/50">
-            {/* 모바일 검색창 */}
-            <div className="mb-4">
-              <form onSubmit={handleSearch} className="relative">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="AI 도구를 검색해보세요..."
-                  className="w-full px-4 py-3 text-sm border-2 border-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-600"
-                />
-                <button 
-                  type="submit"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs rounded-full"
-                >
-                  검색
-                </button>
-              </form>
-            </div>
             
             {/* 모바일 네비게이션 */}
             <div className="flex flex-col space-y-4">
