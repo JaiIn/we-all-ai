@@ -73,6 +73,12 @@ export default function Header() {
             카테고리
             </Link>
             <Link 
+            href="/manuals" 
+            className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+            매뉴얼
+            </Link>
+            <Link 
             href="/search" 
             className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
@@ -114,6 +120,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 카테고리
+              </Link>
+              <Link 
+                href="/manuals" 
+                className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                매뉴얼
               </Link>
               <Link 
                 href="/search" 

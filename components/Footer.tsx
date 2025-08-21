@@ -61,8 +61,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/manuals" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  사용 매뉴얼
+                </Link>
+              </li>
+              <li>
                 <Link href="/search" className="text-gray-600 hover:text-blue-600 transition-colors">
                   AI 도구 검색
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  문의하기
                 </Link>
               </li>
             </ul>
