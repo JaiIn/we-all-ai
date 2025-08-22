@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import BlogManualContent from './BlogManualContent';
 
 const manuals = {
   'shortform': {
@@ -60,11 +61,12 @@ const manuals = {
 };
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const manual = manuals[params.id as keyof typeof manuals];
+  const { id } = await params;
+  const manual = manuals[id as keyof typeof manuals];
   
   if (!manual) {
     return {
@@ -93,86 +95,95 @@ const getDifficultyColor = (difficulty: string) => {
   }
 };
 
-export default function ManualDetailPage({ params }: Props) {
-  const manual = manuals[params.id as keyof typeof manuals];
+export default async function ManualDetailPage({ params }: Props) {
+  const { id } = await params;
+  const manual = manuals[id as keyof typeof manuals];
 
   if (!manual) {
     notFound();
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-32 pb-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 상단 네비게이션 */}
-        <div className="mb-8">
-          <Link
-            href="/manuals"
-            className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            매뉴얼 목록으로 돌아가기
-          </Link>
-        </div>
-
-        {/* 헤더 */}
-        <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden mb-8">
-          <div className={`${manual.color} px-8 py-12 text-center text-white`}>
-            <div className="text-6xl mb-4">{manual.icon}</div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              {manual.title}
-            </h1>
-            <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              {manual.description}
-            </p>
-          </div>
-
-          <div className="px-8 py-6 bg-gray-50 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <span className="text-sm text-gray-600">카테고리:</span>
-              <span className="font-medium text-gray-900">{manual.category}</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(manual.difficulty)}`}>
-                {manual.difficulty}
-              </span>
-              <span className="text-sm text-gray-600">
-                ⏱️ {manual.duration}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* 컨텐츠 영역 */}
-        <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
-          <div className="text-center py-20">
-            <div className="text-6xl mb-8">🚧</div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              매뉴얼 준비 중입니다
-            </h2>
-            <p className="text-gray-600 mb-8 max-w-md mx-auto">
-              해당 매뉴얼의 상세 내용을 준비하고 있습니다. 
-              곧 완성된 가이드를 만나보실 수 있습니다.
-            </p>
-            
-            <div className="space-y-4">
+    <div className="min-h-screen bg-gray-50">
+      {/* 블로그 매뉴얼은 전체 화면 사용 */}
+      {id === 'blog' ? (
+        <BlogManualContent />
+      ) : (
+        /* 다른 매뉴얼은 기존 레이아웃 */
+        <div className="pt-32 pb-20">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* 상단 네비게이션 */}
+            <div className="mb-8">
               <Link
                 href="/manuals"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-900 to-gray-700 text-white font-medium rounded-xl hover:from-gray-800 hover:to-gray-600 transition-all duration-300 mr-4"
+                className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors"
               >
-                다른 매뉴얼 보기
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                매뉴얼 목록으로 돌아가기
               </Link>
-              <Link
-                href="/"
-                className="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-all duration-300"
-              >
-                홈으로 돌아가기
-              </Link>
+            </div>
+
+            {/* 헤더 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden mb-8">
+              <div className={`${manual.color} px-8 py-12 text-center text-white`}>
+                <div className="text-6xl mb-4">{manual.icon}</div>
+                <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                  {manual.title}
+                </h1>
+                <p className="text-xl opacity-90 max-w-2xl mx-auto">
+                  {manual.description}
+                </p>
+              </div>
+
+              <div className="px-8 py-6 bg-gray-50 flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <span className="text-sm text-gray-600">카테고리:</span>
+                  <span className="font-medium text-gray-900">{manual.category}</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(manual.difficulty)}`}>
+                    {manual.difficulty}
+                  </span>
+                  <span className="text-sm text-gray-600">
+                    ⏱️ {manual.duration}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* 컨텐츠 영역 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
+              <div className="text-center py-20">
+                <div className="text-6xl mb-8">🚧</div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  매뉴얼 준비 중입니다
+                </h2>
+                <p className="text-gray-600 mb-8 max-w-md mx-auto">
+                  해당 매뉴얼의 상세 내용을 준비하고 있습니다. 
+                  곧 완성된 가이드를 만나보실 수 있습니다.
+                </p>
+                
+                <div className="space-y-4">
+                  <Link
+                    href="/manuals"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-900 to-gray-700 text-white font-medium rounded-xl hover:from-gray-800 hover:to-gray-600 transition-all duration-300 mr-4"
+                  >
+                    다른 매뉴얼 보기
+                  </Link>
+                  <Link
+                    href="/"
+                    className="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-all duration-300"
+                  >
+                    홈으로 돌아가기
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
